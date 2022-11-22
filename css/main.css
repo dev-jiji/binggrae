@@ -34,6 +34,24 @@ body {
 /* 레이아웃 */
 /* 상단 */
 /* 비주얼 */
+.visual .inner {
+  width: 1600px;
+}
+.visual .inner .logo-box {
+  margin: 0 auto;
+}
+.visual .inner .logo-box a {
+  display: block;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.visual .inner .search-box {
+  display: block;
+  text-align: center;
+}
+.visual .inner .search-box-txt {
+  text-align: center;
+}
 /* 브랜드 */
 /* 고객문의 */
 /* 리포트 */
