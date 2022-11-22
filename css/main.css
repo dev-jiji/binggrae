@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/** @format */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
@@ -32,4 +33,28 @@ body {
 /* 공통요소 */
 /* 레이아웃 */
 /* 상단 */
-@imp;/*# sourceMappingURL=main.css.map */
+/* 비주얼 */
+/* 브랜드 */
+/* 고객문의 */
+/* 리포트 */
+.report-inner {
+  width: 1600px;
+  margin: auto;
+}
+.report-inner .report-header {
+  text-align: center;
+}
+.report-inner .report-box {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.report-inner .report-box .article {
+  flex: 1;
+  gap: 1rem;
+  background: red;
+  width: 635px;
+  height: 230px;
+}
+
+/* 하단 */
