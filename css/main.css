@@ -238,7 +238,6 @@ body {
   background: #f9f9f9;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
   border-radius: 30px;
-  padding: 20px;
   margin-bottom: 20px;
 }
 .faq .inner .faq-box .faq-list li:nth-child(5) {
@@ -248,11 +247,13 @@ body {
   margin-bottom: 0px;
 }
 .faq .inner .faq-box .faq-list li > a {
+  display: block;
   width: 100%;
   height: 100%;
   font-size: 18px;
   color: #1f1f1f;
   line-height: 40px;
+  padding: 20px;
 }
 
 /* 리포트 */
