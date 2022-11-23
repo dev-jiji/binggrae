@@ -48,7 +48,6 @@ body {
 }
 
 /* 레이아웃 */
-
 .wrap {
   max-width: 1600px;
   width: 100%;
@@ -85,7 +84,11 @@ body {
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.15);
   background-color: #f9f9f9;
   text-align: center;
+}
 
+/* section 레이아웃 공통 패딩 */
+.wrap section {
+  padding: 70px 0;
 }
 
 /* 상단 */
@@ -129,14 +132,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.brand .brand-inner .brand-cate .brand-slide > a .brand-slide-img {
+.brand .brand-inner .brand-cate .brand-slide li {
+  position: relative;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-slide-img {
   display: block;
   width: 240px;
   height: 250px;
-  background: url("../images/m_sec02_logo01.png") no-repeat;
+  background: url("../images/sec02_logo01.png") no-repeat;
   background-position: center;
   border: 1px solid #edecef;
   border-radius: 30px;
+  cursor: pointer;
 }
 .brand .brand-inner .brand-cate .brand-slide-next span {
   position: absolute;
@@ -195,6 +202,7 @@ body {
   padding-bottom: 30px;
 }
 .faq .inner .faq-box .faq-consult .faq-email p {
+  letter-spacing: -0.09em;
   line-height: 25px;
   padding-bottom: 70px;
   color: #1f1f1f;
@@ -204,6 +212,7 @@ body {
   height: 45px;
   background: #ed1c24;
   color: #fff;
+  letter-spacing: -0.09em;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -231,8 +240,10 @@ body {
 }
 .faq .inner .faq-box .faq-consult .faq-phone span {
   color: #1f1f1f;
+  letter-spacing: -0.09em;
 }
 .faq .inner .faq-box .faq-consult .faq-phone span span {
+  font-weight: 500;
   color: #e0462e;
   margin-left: 25px;
 }
@@ -268,6 +279,8 @@ body {
   flex-wrap: wrap;
 }
 .faq .inner .faq-box .faq-list li {
+  position: relative;
+  display: block;
   width: 590px;
   height: 80px;
   background: #f9f9f9;
@@ -286,9 +299,27 @@ body {
   width: 100%;
   height: 100%;
   font-size: 18px;
+  letter-spacing: -0.07em;
   color: #1f1f1f;
   line-height: 40px;
   padding: 20px;
+}
+.faq .inner .faq-box .faq-list li:hover a {
+  font-weight: 700;
+  letter-spacing: -0.09em;
+}
+.faq .inner .faq-box .faq-list li:hover a::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 47px;
+  height: 47px;
+  background: #e0462e url("../images/link_arrow01.png") no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
 
 /* 리포트 */

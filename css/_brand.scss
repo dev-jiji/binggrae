@@ -38,15 +38,17 @@
         width: 1550px;
         display: flex;
         justify-content: space-between;
-        > a {
+        li {
+          position: relative;
           .brand-slide-img {
             display: block;
             width: 240px;
             height: 250px;
-            background: url("../images/m_sec02_logo01.png") no-repeat;
+            background: url("../images/sec02_logo01.png") no-repeat;
             background-position: center;
             border: 1px solid #edecef;
             border-radius: 30px;
+            cursor: pointer;
           }
         }
       }
