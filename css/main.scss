@@ -32,9 +32,26 @@ body {
   color: #000;
 }
 /* 공통요소 */
-
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
 /* 레이아웃 */
 .wrap {
+}
+/* section 레이아웃 공통 패딩 */
+.wrap > section {
+  padding: 70px 0;
 }
 /* 상단 */
 @import 'header';
