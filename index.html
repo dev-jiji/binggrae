@@ -82,8 +82,48 @@
   </head>
   <body>
     <div class="wrap">
+      <!-- 서브메뉴-->
+      <div class="submenu">
+        <button class="shop">SHOP</button>
+        <button class="upper"><img src="/images/fix_arrow.png" /></button>
+      </div>
+
       <!-- 상단 -->
-      <header class="header"></header>
+
+      <header class="header">
+        <div class="header-top">
+          <ul class="header-link clearfix">
+            <li><span>구매포털시스템</span></li>
+            <li><span>인재채용</span></li>
+          </ul>
+        </div>
+        <div class="header-bottom">
+          <a href="index.html" class="logo">
+            <img src="images/logo-pc.png" alt="빙그레" />
+          </a>
+          <nav class="nav">
+            <ul class="gnb clearfix">
+              <li><a href="#" class="">회사소개</a></li>
+              <li><a href="#" class="">제품소개</a></li>
+              <li><a href="#" class="">지속가능경영</a></li>
+              <li><a href="#" class="">투자정보</a></li>
+              <li><a href="#" class="">뉴스룸</a></li>
+              <li><a href="#" class="">고객센터</a></li>
+            </ul>
+          </nav>
+          <div class="header-right">
+            <ul class="language">
+              <li><a href="#">kr</a></li>
+              <li><a href="#">en</a></li>
+              <li><a href="#">cn</a></li>
+            </ul>
+            <button class="header-menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
       <!-- 비주얼 -->
       <section class="visual">
         <div class="inner">
@@ -91,6 +131,7 @@
             <img src="/images/sec01_logo_3.png" alt="binggrea" />
           </div>
           <div class="search-box">
+            <i><img src="/images/search_icon.png" /></i>
             <form>
               <input
                 type="search"
@@ -101,10 +142,10 @@
               <button class="search-enter">search</button>
             </form>
             <ul class="keyword">
-              <li class=""><a href="#">링키바</a></li>
-              <li class=""><a href="#">더단백</a></li>
-              <li class=""><a href="#">요플레 프로틴</a></li>
-              <li class=""><a href="#">바나나맛우유</a></li>
+              <li><a href="#">#링키바</a></li>
+              <li><a href="#">#더단백</a></li>
+              <li><a href="#">#요플레 프로틴</a></li>
+              <li><a href="#">#바나나맛우유</a></li>
             </ul>
           </div>
         </div>
@@ -113,55 +154,122 @@
       <section class="menu">
         <div class="inner">
           <h3>행복한 빙그레의 맛</h3>
-            <div class="menu-slide">
-          <!-- 좌 버튼 -->
-          <div class="menu-slide-prev">
-            <span> <img src="" alt="" />이전 </span>
-          </div>
-          <!-- 메뉴 목록 -->
-          <ul class="menu-slide">
-            <li>
-              <a href="#">
-                <span>
-                  <img src="/images/sec02_img01.png" alt="" />
-                </span>
-              </a>
-              <span class="">
-                <a href="#"> 아이스크림 </a>
-              </span>
-            </li>
-          </ul>
-          <!-- 우 버튼 -->
-          <div class="menu-slide-next">
-            <span><img src="" alt="" />이후</span>
-          </div>
+          <div class="menu-slide">
+            <!-- 좌 버튼 -->
+            <div class="menu-slide-prev">
+              <span> <img src="" alt="" />이전 </span>
             </div>
+            <!-- 메뉴 목록 -->
+            <ul class="menu-slide">
+              <li>
+                <a href="#">
+                  <span>
+                    <img src="/images/sec02_img01.png" alt="" />
+                  </span>
+                </a>
+                <span class="">
+                  <a href="#"> 아이스크림 </a>
+                </span>
+              </li>
+            </ul>
+            <!-- 우 버튼 -->
+            <div class="menu-slide-next">
+              <span><img src="" alt="" />이후</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- 브랜드 -->
-      <section class="brand"></section>
-
+      <!-- 철호 -->
+      <section class="brand">
+        <div class="brand-inner inner">
+          <h2 class="brand-title">brand shop</h2>
+          <div class="brand-cate">
+            <div class="brand-slide-prev">
+              <span>이전</span>
+            </div>
+            <div class="brand-slide">
+              <a href="#"><span class="brand-slide-img"></span></a>
+              <a href="#"><span class="brand-slide-img"></span></a>
+              <a href="#"><span class="brand-slide-img"></span></a>
+              <a href="#"><span class="brand-slide-img"></span></a>
+              <a href="#"><span class="brand-slide-img"></span></a>
+              <a href="#"><span class="brand-slide-img"></span></a>
+            </div>
+            <div class="brand-slide-next">
+              <span>다음</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 고객문의 -->
-      <section class="faq"></section>
+      <!-- 철호 -->
+      <section class="faq">
+        <div class="inner">
+          <h2 class="faq-title">고객문의 및 불편사항</h2>
+          <div class="faq-wrap">
+            <div class="faq-top">
+              <div class="faq-email">
+                <h4>이메일 상담</h4>
+                <p>
+                  빙그레에 궁금한 사항을 문의해 주세요. <br />
+                  최대한 빠른 시일 내에 친절하게 답변해드리겠습니다.
+                </p>
+                <button>상담하기</button>
+              </div>
+              <div class="faq-phone">
+                <h4>전화 상담</h4>
+                <p>080.022.0056</p>
+                <span>월~금(공휴일 제외)</span>
+                <span>09:00~17:30</span>
+              </div>
+            </div>
+            <div class="faq-bottom">
+              <h3 class="faq-bottom-title">
+                자주 묻는 질문에 내용이 없을 경우, 이메일 및 전화 상담 바랍니다.
+              </h3>
+              <button class="faq-bottom-button"></button>
+              <ul>
+                <li><a href="#">Q.아이스크림에는 왜 유통기한이 없나요?</a></li>
+                <li>
+                  <a href="#">Q.유통기한 경과 제품, 빙그레에서 처리해주나요?</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Q.제품 유통기한 뒤에 있는 알파벳 기호는 무엇인가요?</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Q.빙그레 서체의 사용 범위를 알고 싶어요.</a>
+                </li>
+                <li>
+                  <a href="#">Q.유통기한과 소비기한의 차이점은 무엇인가요?</a>
+                </li>
+                <li><a href="#">Q.소비기한은 언제부터 시행하나요?</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- 리포트-->
       <section class="report">
         <div class="report-inner inner">
           <h2 class="report-header">빙그레 임직원 및 종사자 온라인제보</h2>
           <div class="report-box">
-            <article class="box-left">
+            <article class="box-left box">
               <p>
                 빙그레 임직원의 부당한 요구 또는 업무 처리, 기타 부정행위 제보
               </p>
-              <button class="left-btn">사이버 부정신고</button>
+              <button class="left-btn btn"><span>사이버 부정신고</span></button>
             </article>
-            <article class="box-right">
+            <article class="box-right box">
               <p>
                 빙그레 종사자의 유해&bull;위험요소 및 안전&bull;보건에 관한 의견
                 제보
               </p>
-              <button class="right-btn">안전신문고</button>
+              <button class="right-btn btn"><span>안전신문고</span></button>
             </article>
           </div>
         </div>
@@ -171,10 +279,11 @@
       <footer class="footer">
         <div class="footer-inner inner">
           <div class="footer-top">
-            <a href="#" class="f-logo"><img src="/images/f_logo.png"</a>
+            <a href="#" class="f-logo"><img src="/images/f_logo.png" /></a>
+
             <span class="f-info">
               <a href="#" class="f-jungbo">개인정보처리방침</a>
-              <a href="#" class="f-road">오시는 길</a>
+              <a href="#" class="f-road">오시는길</a>
             </span>
           </div>
 
@@ -196,16 +305,17 @@
                 <img src="/images/footer_sns01.png" />
               </button>
               <button class="youtube">
-                <img src="/images/footer_sns02.png"
+                <img src="/images/footer_sns02.png" />
               </button>
               <button class="tft">
                 <img src="/images/footer_sns03.png" />
               </button>
             </span>
+
             <button class="f-logo">
               <span><img src="/images/flag_store.png" /></span>
               <span>Flagship store <b>SoftLab</b></span>
-              <span><img src="/images/select_btn01.png" /></span>
+              <span class="arrow"><img src="/images/select_btn01.png" /></span>
             </button>
           </div>
         </div>
