@@ -31,7 +31,24 @@ body {
 }
 
 /* 공통요소 */
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 /* 레이아웃 */
+
 .wrap {
   max-width: 1600px;
   width: 100%;
@@ -68,12 +85,95 @@ body {
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.15);
   background-color: #f9f9f9;
   text-align: center;
+
 }
 
 /* 상단 */
 /* 비주얼 */
 /* 브랜드 */
+.brand .brand-inner .brand-title {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 38px;
+  color: #000;
+  text-align: center;
+  line-height: 1.45;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.brand .brand-inner .brand-cate {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.brand .brand-inner .brand-cate .brand-slide-prev span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 15px;
+  background: url("../images/prev_arrow.png") no-repeat;
+  background-position: 0 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.brand .brand-inner .brand-cate .brand-slide {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1550px;
+  display: flex;
+  justify-content: space-between;
+}
+.brand .brand-inner .brand-cate .brand-slide > a .brand-slide-img {
+  display: block;
+  width: 240px;
+  height: 250px;
+  background: url("../images/m_sec02_logo01.png") no-repeat;
+  background-position: center;
+  border: 1px solid #edecef;
+  border-radius: 30px;
+}
+.brand .brand-inner .brand-cate .brand-slide-next span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 15px;
+  background: url("../images/next_arrow.png") no-repeat;
+  background-position: 0 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
 /* 고객문의 */
+.faq .inner .faq-title {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 38px;
+  color: #000;
+  text-align: center;
+  line-height: 1.45;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.faq .inner .faq-wrap {
+  width: 1300px;
+  height: 850px;
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.faq .inner .faq-wrap .faq-top {
+  display: flex;
+  justify-content: space-between;
+}
 /* 리포트 */
 /* report 부분*/
 .report-inner {
