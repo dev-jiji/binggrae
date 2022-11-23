@@ -48,9 +48,44 @@ body {
 }
 
 /* 레이아웃 */
-/* section 레이아웃 공통 패딩 */
-.wrap > section {
-  padding: 70px 0;
+
+.wrap {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.submenu {
+  z-index: 100;
+  position: absolute;
+  right: 5px;
+  bottom: 6%;
+  width: 100px;
+}
+.submenu .shop,
+.submenu .upper {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.submenu .shop {
+  background-color: whitesmoke;
+  border: 0;
+}
+.submenu .upper {
+  background-color: black;
+}
+
+.box {
+  width: 550px;
+  height: 230px;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.15);
+  background-color: #f9f9f9;
+  text-align: center;
+
 }
 
 /* 상단 */
@@ -257,24 +292,101 @@ body {
 }
 
 /* 리포트 */
+/* report 부분*/
 .report-inner {
   width: 1600px;
   margin: auto;
+  padding-bottom: 3rem;
 }
 .report-inner .report-header {
   text-align: center;
 }
 .report-inner .report-box {
   margin: auto;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+  width: 1150px;
 }
-.report-inner .report-box .article {
-  flex: 1;
-  gap: 1rem;
+.report-inner .report-box .btn {
+  border-radius: 20px;
   background: red;
-  width: 635px;
-  height: 230px;
+  border: 0;
+  padding: 10px 2rem;
+  margin-top: 2rem;
+}
+.report-inner .report-box .btn span {
+  font-size: 1rem;
+  color: white;
+}
+.report-inner .report-box .box-left p {
+  margin-top: 5rem;
+}
+.report-inner .report-box .box-right p {
+  margin-top: 5rem;
 }
 
 /* 하단 */
+.footer-inner {
+  background-color: black;
+  opacity: 0.8;
+  padding: 1rem;
+}
+.footer-inner .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner .footer-top .f-info {
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.footer-inner .footer-top .f-info .f-jungbo {
+  margin-right: 20px;
+}
+.footer-inner .footer-top .f-info a {
+  color: whitesmoke;
+}
+.footer-inner .footer-middle {
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+}
+.footer-inner .footer-middle span {
+  color: whitesmoke;
+}
+.footer-inner .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner .footer-bottom .f-copyright {
+  color: whitesmoke;
+  opacity: 0.3;
+  padding-top: 3rem;
+}
+.footer-inner .footer-bottom .f-buttons {
+  display: inline-flex;
+  gap: 0 3rem;
+  margin-left: 500px;
+}
+.footer-inner .footer-bottom .f-buttons .insta,
+.footer-inner .footer-bottom .f-buttons .youtube,
+.footer-inner .footer-bottom .f-buttons .tft {
+  background: rgb(116, 116, 101);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.footer-inner .footer-bottom .f-logo {
+  position: relative;
+  background: rgb(116, 116, 101);
+  border-radius: 30px;
+  padding: 5px 1.5rem;
+  color: whitesmoke;
+  margin-right: 3rem;
+}
+.footer-inner .footer-bottom .f-logo .arrow {
+  padding-left: 5rem;
+}
+.footer-inner .footer-bottom .f-logo span:nth-child(2) {
+  font-size: 20px;
+}
