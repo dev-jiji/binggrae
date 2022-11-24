@@ -48,7 +48,7 @@ body {
 }
 /* 레이아웃 */
 .wrap {
-  // max-width: 1600px;
+  max-width: 1600px;
   width: 100%;
   margin: auto;
   position: relative;
@@ -84,12 +84,8 @@ body {
   background-color: #f9f9f9;
   text-align: center;
 }
-/* section 레이아웃 공통 패딩 */
-.wrap section {
-  padding: 70px 0;
-}
 /* 상단 */
-@import "header";
+@import 'header';
 /* 비주얼 */
 @import "visual";
 /* 브랜드 */
@@ -108,6 +104,7 @@ body {
   .report-header {
     text-align: center;
   }
+
   .report-box {
     margin: auto;
     margin-top: 2rem;
