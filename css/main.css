@@ -364,6 +364,13 @@ body {
 }
 
 /* 브랜드 */
+.brand {
+  margin: 0 25px;
+}
+.brand .brand-inner {
+  width: 1650px;
+  margin: 0 auto;
+}
 .brand .brand-inner .brand-title {
   position: relative;
   display: block;
@@ -380,6 +387,7 @@ body {
   display: block;
   width: 100%;
   height: 300px;
+  overflow: hidden;
 }
 .brand .brand-inner .brand-cate .brand-slide-prev span {
   position: absolute;
@@ -389,7 +397,7 @@ body {
   width: 8px;
   height: 15px;
   background: url("../images/prev_arrow.png") no-repeat;
-  background-position: 0 0;
+  background-size: contain;
   font-size: 0;
   cursor: pointer;
 }
@@ -404,6 +412,12 @@ body {
 }
 .brand .brand-inner .brand-cate .brand-slide li {
   position: relative;
+  display: block;
+  width: 240px;
+  height: 250px;
+  border: 1px solid #edecef;
+  border-radius: 30px;
+  transition: transform 300ms;
 }
 .brand .brand-inner .brand-cate .brand-slide li .brand-slide-img {
   display: block;
@@ -411,9 +425,77 @@ body {
   height: 250px;
   background: url("../images/sec02_logo01.png") no-repeat;
   background-position: center;
-  border: 1px solid #edecef;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box {
+  position: absolute;
+  left: 50%;
+  bottom: -200%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 240px;
+  height: 250px;
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 {
+  display: block;
+  transform: translateY(30%);
+  transition: transform 500ms;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-img {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url("../images/sec02_logo01.png") no-repeat;
+  background-size: 90px 32px;
+  background-position: 50% 50%;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-txt::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 18px auto;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-txt {
+  display: block;
+  height: 105px;
+  line-height: 1.38;
+  letter-spacing: -0.09em;
+  text-align: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-button {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  width: 225px;
+  height: 45px;
+  background: #ed1c24;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.09em;
+  border: 0;
   border-radius: 30px;
   cursor: pointer;
+}
+.brand .brand-inner .brand-cate .brand-slide li:hover {
+  border: none;
+  transform: translateY(-5px);
+}
+.brand .brand-inner .brand-cate .brand-slide li:hover .brand-slide-img {
+  display: none;
+}
+.brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+}
+.brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box .brand-hover-box1 {
+  transform: translateY(0);
 }
 .brand .brand-inner .brand-cate .brand-slide-next span {
   position: absolute;
@@ -423,7 +505,6 @@ body {
   width: 8px;
   height: 15px;
   background: url("../images/next_arrow.png") no-repeat;
-  background-position: 0 0;
   font-size: 0;
   cursor: pointer;
 }
@@ -564,7 +645,7 @@ body {
 .faq .inner .faq-box .faq-list li:nth-child(6) {
   margin-bottom: 0px;
 }
-.faq .inner .faq-box .faq-list li > a {
+.faq .inner .faq-box .faq-list a {
   display: block;
   width: 100%;
   height: 100%;
@@ -574,22 +655,26 @@ body {
   line-height: 40px;
   padding: 20px;
 }
-.faq .inner .faq-box .faq-list li:hover a {
-  font-weight: 700;
-  letter-spacing: -0.09em;
-}
-.faq .inner .faq-box .faq-list li:hover a::after {
+.faq .inner .faq-box .faq-list a::after {
   content: "";
   position: absolute;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) scale(0);
   display: block;
   width: 47px;
   height: 47px;
   background: #e0462e url("../images/link_arrow01.png") no-repeat;
   background-position: center;
   border-radius: 50%;
+  transition: all 300ms;
+}
+.faq .inner .faq-box .faq-list li:hover a {
+  font-weight: 700;
+  letter-spacing: -0.09em;
+}
+.faq .inner .faq-box .faq-list li:hover a::after {
+  transform: translateY(-50%) scale(1);
 }
 
 /* 리포트 */
