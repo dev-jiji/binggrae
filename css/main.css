@@ -31,16 +31,7 @@ body {
 }
 
 /* 공통요소 */
-.clearfix::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  clear: both;
-}
-
 .inner {
-  position: relative;
   display: block;
   width: 100%;
   max-width: 1600px;
@@ -55,11 +46,12 @@ body {
 }
 
 .submenu {
-  z-index: 100;
-  position: absolute;
-  right: 5px;
-  bottom: 6%;
+  z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100px;
+  top: 40%;
+  left: 95%;
 }
 .submenu .shop,
 .submenu .upper {
@@ -71,6 +63,7 @@ body {
 .submenu .shop {
   background-color: whitesmoke;
   border: 0;
+  margin-bottom: 1rem;
 }
 .submenu .upper {
   background-color: black;
@@ -85,12 +78,136 @@ body {
   text-align: center;
 }
 
-/* section 레이아웃 공통 패딩 */
-.wrap section {
-  padding: 70px 0;
+.red::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: red;
+  visibility: hidden;
 }
 
 /* 상단 */
+.header {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 500;
+}
+.header .header-top {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+.header .header-top .header-top-menu {
+  padding-right: 3rem;
+}
+.header .header-top .header-top-menu span:first-child {
+  margin-right: 1.5rem;
+}
+.header .header-top .header-top-menu .portalsys::after {
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 90px;
+  top: 4px;
+}
+.header .header-middle {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.header .header-middle .menu-logo {
+  display: inline-block;
+  padding-left: 3rem;
+}
+.header .header-middle .nav:hover + .header-bg {
+  top: 0%;
+  transition: all 1s;
+}
+.header .header-middle .nav .gnb {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 0 5rem;
+  vertical-align: middle;
+  margin-right: 4rem;
+}
+.header .header-middle .nav .gnb:hover .depth {
+  opacity: 1;
+  transition: all 3s;
+}
+.header .header-middle .nav .gnb:hover .header-bg {
+  display: block;
+}
+.header .header-middle .nav .gnb > li {
+  padding-bottom: 1rem;
+  position: relative;
+}
+.header .header-middle .nav .gnb > li > a {
+  font-size: 1.5rem;
+}
+.header .header-middle .nav .gnb > li > a:hover {
+  color: red;
+}
+.header .header-middle .nav .gnb > li > a:hover::after {
+  visibility: visible;
+}
+.header .header-middle .nav .gnb > li .depth {
+  opacity: 0;
+  position: absolute;
+  margin-top: 4.5rem;
+}
+.header .header-middle .nav .gnb > li .depth > li {
+  padding-top: 15px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+.header .header-middle .header-bg {
+  z-index: -10;
+  position: absolute;
+  top: -550px;
+  left: 0%;
+  width: 100%;
+  height: 550px;
+  border-radius: 0 0 100px 100px;
+  background-color: whitesmoke;
+}
+.header .header-middle .lang {
+  padding-right: 3rem;
+}
+.header .header-middle .lang > a {
+  font-weight: 700;
+  vertical-align: middle;
+  position: relative;
+}
+.header .header-middle .lang .krbutton {
+  border-radius: 20%;
+  background-color: whitesmoke;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 4%;
+}
+.header .header-middle .lang .krbutton span {
+  font-size: 1.2rem;
+  padding: 8px 14px;
+  font-weight: 700;
+}
+.header .header-middle .lang > img {
+  margin-right: 2rem;
+  vertical-align: middle;
+}
+.header .header-middle .lang > span {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
 /* 비주얼 */
 .visual {
   position: relative;
