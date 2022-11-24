@@ -31,6 +31,22 @@ body {
 }
 
 /* 공통요소 */
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 /* 레이아웃 */
 .wrap {
   width: 100%;
@@ -67,6 +83,11 @@ body {
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.15);
   background-color: #f9f9f9;
   text-align: center;
+}
+
+/* section 레이아웃 공통 패딩 */
+.wrap section {
+  padding: 70px 0;
 }
 
 /* 상단 */
@@ -128,8 +149,317 @@ body {
 }
 
 /* 비주얼 */
+.visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: url("../images/pc_section01_3.jpg") no-repeat center;
+  background-size: cover;
+  padding: 180px 0 !important;
+}
+.visual .inner {
+  width: 1600px;
+  margin: 0 auto;
+}
+.visual .inner .visual-box {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.visual .inner .search-box {
+  display: block;
+  width: 1020px;
+  margin: 0 auto;
+}
+.visual .inner .search-box form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-radius: 40px;
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 20px;
+}
+.visual .inner .search-box form::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+  background: url("../images/search_icon.png") no-repeat center;
+}
+.visual .inner .search-box form .search-enter {
+  width: 160px;
+  height: 45px;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.visual .inner .search-box .keyword {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  gap: 0 20px;
+}
+.visual .inner .search-box .keyword li {
+  border-radius: 18.5px;
+  /* box-shadow: 0px 2px 9.8px 0.2px rgb(0 0 0 / 8%); */
+  border: solid 1px #edecef;
+}
+.visual .inner .search-box .keyword li a {
+  display: block;
+  padding: 0 10px;
+  line-height: 37px;
+  font-size: 12px;
+  color: #1f1f1f;
+}
+.visual .inner .search-box-txt {
+  position: relative;
+  display: block;
+  border: none;
+}
+.visual .inner .search-box-txt:focus {
+  outline: none;
+}
+
 /* 브랜드 */
+.brand .brand-inner .brand-title {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 38px;
+  color: #000;
+  text-align: center;
+  line-height: 1.45;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.brand .brand-inner .brand-cate {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.brand .brand-inner .brand-cate .brand-slide-prev span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 15px;
+  background: url("../images/prev_arrow.png") no-repeat;
+  background-position: 0 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.brand .brand-inner .brand-cate .brand-slide {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1550px;
+  display: flex;
+  justify-content: space-between;
+}
+.brand .brand-inner .brand-cate .brand-slide li {
+  position: relative;
+}
+.brand .brand-inner .brand-cate .brand-slide li .brand-slide-img {
+  display: block;
+  width: 240px;
+  height: 250px;
+  background: url("../images/sec02_logo01.png") no-repeat;
+  background-position: center;
+  border: 1px solid #edecef;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.brand .brand-inner .brand-cate .brand-slide-next span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 15px;
+  background: url("../images/next_arrow.png") no-repeat;
+  background-position: 0 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
 /* 고객문의 */
+.faq .inner .faq-title {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 38px;
+  color: #1f1f1f;
+  text-align: center;
+  line-height: 1.45;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.faq .inner .faq-box {
+  width: 1300px;
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 60px 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.faq .inner .faq-box .faq-consult {
+  width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.faq .inner .faq-box .faq-consult .faq-email {
+  display: block;
+  width: 590px;
+  height: 325px;
+  background: #eef8fa url("../images/m_sec04_backimg01.png") no-repeat;
+  background-position: 0px 70px;
+  padding: 55px 45px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.faq .inner .faq-box .faq-consult .faq-email h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f1f1f;
+  padding-bottom: 30px;
+}
+.faq .inner .faq-box .faq-consult .faq-email p {
+  letter-spacing: -0.09em;
+  line-height: 25px;
+  padding-bottom: 70px;
+  color: #1f1f1f;
+}
+.faq .inner .faq-box .faq-consult .faq-email button {
+  width: 160px;
+  height: 45px;
+  background: #ed1c24;
+  color: #fff;
+  letter-spacing: -0.09em;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.faq .inner .faq-box .faq-consult .faq-phone {
+  display: block;
+  width: 590px;
+  height: 325px;
+  background: #fdf3f2 url("../images/m_sec04_backimg02.png") no-repeat;
+  background-position: 0px 70px;
+  padding: 55px 45px;
+  border-radius: 30px;
+}
+.faq .inner .faq-box .faq-consult .faq-phone h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f1f1f;
+  padding-bottom: 30px;
+}
+.faq .inner .faq-box .faq-consult .faq-phone p {
+  font-size: 46.5px;
+  font-weight: 700;
+  color: #1f1f1f;
+  padding-bottom: 25px;
+}
+.faq .inner .faq-box .faq-consult .faq-phone span {
+  color: #1f1f1f;
+  letter-spacing: -0.09em;
+}
+.faq .inner .faq-box .faq-consult .faq-phone span span {
+  font-weight: 500;
+  color: #e0462e;
+  margin-left: 25px;
+}
+.faq .inner .faq-box .faq-more {
+  width: 1220px;
+  height: 120px;
+  padding-top: 47px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.faq .inner .faq-box .faq-more h3 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 45px;
+}
+.faq .inner .faq-box .faq-more button {
+  width: 160px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f1f1f;
+  background: transparent;
+  border: 1px solid rgba(224, 223, 226, 0.6);
+  border-radius: 30px;
+  cursor: pointer;
+}
+.faq .inner .faq-box .faq-list {
+  width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.faq .inner .faq-box .faq-list li {
+  position: relative;
+  display: block;
+  width: 590px;
+  height: 80px;
+  background: #f9f9f9;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.faq .inner .faq-box .faq-list li:nth-child(5) {
+  margin-bottom: 0px;
+}
+.faq .inner .faq-box .faq-list li:nth-child(6) {
+  margin-bottom: 0px;
+}
+.faq .inner .faq-box .faq-list li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  letter-spacing: -0.07em;
+  color: #1f1f1f;
+  line-height: 40px;
+  padding: 20px;
+}
+.faq .inner .faq-box .faq-list li:hover a {
+  font-weight: 700;
+  letter-spacing: -0.09em;
+}
+.faq .inner .faq-box .faq-list li:hover a::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 47px;
+  height: 47px;
+  background: #e0462e url("../images/link_arrow01.png") no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
 /* 리포트 */
 /* report 부분*/
 .report-inner {

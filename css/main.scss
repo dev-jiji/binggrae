@@ -1,7 +1,7 @@
 /** @format */
 
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -28,13 +28,27 @@ html {
 }
 
 body {
-  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
   color: #000;
 }
 /* 공통요소 */
-
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
 /* 레이아웃 */
 .wrap {
+  max-width: 1600px;
   width: 100%;
   margin: auto;
   position: relative;
@@ -70,85 +84,16 @@ body {
   background-color: #f9f9f9;
   text-align: center;
 }
-
 /* 상단 */
 @import 'header';
-
-.header{
-  position:fixed;
-  left:0;
-  top:0;
-  width:100%;
-  z-index: 9999;
-
-  .header-bg{
-    z-index:50;
-    position:absolute;
-    width:100%;
-    height:400px;
-    background: wheat;
-    opacity:0.5;
-  }
-  .header-top {
-    display: flex;
-    justify-content: flex-end;
-    padding:5px 0;
-    
-  
-    .header-top-menu {
-      span:first-child {
-        margin-right: 1.5rem;
-      }
-      .portalsys::after {
-        content: '';
-        display: inline-block;
-        width: 1.5px;
-        height: 20px;
-        background-color: rgba(0, 0, 0, 0.1);
-        position: absolute;
-        right: 90px;
-        top: 4px;
-      }
-    }
-  
-  }
-  
-  .header-middle {
-    display: flex;
-    justify-content: space-between;
-    margin:3rem 0;
-    .menu-logo {
-      display: inline-block;
-    }
-  
-    .nav {
-      vertical-align: middle;
-      padding-top:10px;
-      .gnb {
-        display: inline-flex;
-        justify-content: space-between;
-        gap:0 3rem;
-        vertical-align: middle;
-      }
-    }
-    .lang{
-      padding-top:10px;
-    }
-  }
-}
-
-
-
-
-
 /* 비주얼 */
-@import 'visual';
+@import "visual";
 /* 브랜드 */
-@import 'brand';
+@import "brand";
 /* 고객문의 */
-@import 'faq';
+@import "faq";
 /* 리포트 */
-@import 'report';
+@import "report";
 
 /* report 부분*/
 .report-inner {
@@ -193,7 +138,7 @@ body {
 }
 
 /* 하단 */
-@import 'footer';
+@import "footer";
 
 .footer-inner {
   background-color: black;

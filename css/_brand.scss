@@ -1,0 +1,71 @@
+.brand {
+  .brand-inner {
+    .brand-title {
+      position: relative;
+      display: block;
+      font-weight: 700;
+      font-size: 38px;
+      color: #000;
+      text-align: center;
+      line-height: 1.45;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .brand-cate {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 300px;
+      .brand-slide-prev {
+        span {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 8px;
+          height: 15px;
+          background: url("../images/prev_arrow.png") no-repeat;
+          background-position: 0 0;
+          font-size: 0;
+          cursor: pointer;
+        }
+      }
+      .brand-slide {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1550px;
+        display: flex;
+        justify-content: space-between;
+        li {
+          position: relative;
+          .brand-slide-img {
+            display: block;
+            width: 240px;
+            height: 250px;
+            background: url("../images/sec02_logo01.png") no-repeat;
+            background-position: center;
+            border: 1px solid #edecef;
+            border-radius: 30px;
+            cursor: pointer;
+          }
+        }
+      }
+      .brand-slide-next {
+        span {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 8px;
+          height: 15px;
+          background: url("../images/next_arrow.png") no-repeat;
+          background-position: 0 0;
+          font-size: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
