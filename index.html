@@ -93,7 +93,7 @@
       <!-- 서브메뉴-->
       <div class="submenu">
         <button class="shop">SHOP</button>
-        <button class="upper"><img src="/images/fix_arrow.png" /></button>
+        <button onclick="upper()" class="upper"><img src="/images/fix_arrow.png" /></button>
       </div>
 
       <!-- 상단 -->
@@ -204,7 +204,7 @@
       </header>
 
       <!-- 비주얼 -->
-      <section class="visual">
+      <section class="visual" id="top">
         <div class="inner">
           <div class="visual-box">
             <img src="/images/sec01_logo_3.png" alt="binggrea" />
@@ -430,5 +430,10 @@
         </div>
       </footer>
     </div>
+    <script>
+      let upper = function() {
+      document.body.scrollIntoView({ behavior: 'smooth' });
+      };
+      </script>
   </body>
 </html>

@@ -50,7 +50,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   width: 100px;
-  top: 40%;
+  top: 85%;
   left: 95%;
 }
 .submenu .shop,
@@ -63,7 +63,6 @@ body {
 .submenu .shop {
   background-color: whitesmoke;
   border: 0;
-  margin-bottom: 1rem;
 }
 .submenu .upper {
   background-color: black;
