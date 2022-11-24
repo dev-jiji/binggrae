@@ -35,7 +35,6 @@ body {
 
 /* 레이아웃 */
 .wrap {
-  max-width: 1600px;
   width: 100%;
   margin: auto;
   position: relative;
@@ -71,8 +70,77 @@ body {
   background-color: #f9f9f9;
   text-align: center;
 }
+
 /* 상단 */
 @import 'header';
+
+.header{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  z-index: 9999;
+
+  .header-bg{
+    z-index:50;
+    position:absolute;
+    width:100%;
+    height:400px;
+    background: wheat;
+    opacity:0.5;
+  }
+  .header-top {
+    display: flex;
+    justify-content: flex-end;
+    padding:5px 0;
+    
+  
+    .header-top-menu {
+      span:first-child {
+        margin-right: 1.5rem;
+      }
+      .portalsys::after {
+        content: '';
+        display: inline-block;
+        width: 1.5px;
+        height: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 90px;
+        top: 4px;
+      }
+    }
+  
+  }
+  
+  .header-middle {
+    display: flex;
+    justify-content: space-between;
+    margin:3rem 0;
+    .menu-logo {
+      display: inline-block;
+    }
+  
+    .nav {
+      vertical-align: middle;
+      padding-top:10px;
+      .gnb {
+        display: inline-flex;
+        justify-content: space-between;
+        gap:0 3rem;
+        vertical-align: middle;
+      }
+    }
+    .lang{
+      padding-top:10px;
+    }
+  }
+}
+
+
+
+
+
 /* 비주얼 */
 @import 'visual';
 /* 브랜드 */
@@ -91,6 +159,7 @@ body {
   .report-header {
     text-align: center;
   }
+
   .report-box {
     margin: auto;
     margin-top: 2rem;
