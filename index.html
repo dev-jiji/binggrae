@@ -93,7 +93,9 @@
       <!-- 서브메뉴-->
       <div class="submenu">
         <button class="shop">SHOP</button>
-        <button onclick="upper()" class="upper"><img src="/images/fix_arrow.png" /></button>
+        <button onclick="upper()" class="upper">
+          <img src="/images/fix_arrow.png" />
+        </button>
       </div>
 
       <!-- 상단 -->
@@ -116,10 +118,7 @@
             <nav class="nav">
               <ul class="gnb">
                 <li>
-                  <a href="#" class="red">
-                    
-                    회사소개</a
-                  >
+                  <a href="#" class="red"> 회사소개</a>
                   <ul class="depth">
                     <li><a href="#">CEO인사말</a></li>
                     <li><a href="#">경영이념</a></li>
@@ -289,12 +288,12 @@
         <div class="brand-inner">
           <h2 class="brand-title">brand shop</h2>
           <div class="brand-cate">
-            <div class="brand-slide-prev">
+            <button class="brand-slide-prev">
               <span>이전</span>
-            </div>
+            </button>
             <ul class="brand-slide">
               <li>
-                <span class="brand-slide-img"></span>
+                <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
                     <span class="brand-hover-img"></span>
@@ -307,81 +306,80 @@
                 </div>
               </li>
               <li>
-                <span class="brand-slide-img"></span>
+                <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
                     <span class="brand-hover-img"></span>
                     <span class="brand-hover-txt">
-                      빙그레 건강 tft의<br />
-                      단백질 전문 브랜드
+                      부담없는 캐주얼한 커피
                     </span>
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
               </li>
               <li>
-                <span class="brand-slide-img"></span>
+                <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
                     <span class="brand-hover-img"></span>
                     <span class="brand-hover-txt">
-                      빙그레 건강 tft의<br />
-                      단백질 전문 브랜드
+                      39년 전통의 <br />
+                      대한민국 Heritage
                     </span>
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
               </li>
               <li>
-                <span class="brand-slide-img"></span>
+                <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
                     <span class="brand-hover-img"></span>
                     <span class="brand-hover-txt">
-                      빙그레 건강 tft의<br />
-                      단백질 전문 브랜드
+                      대한민국을 대표하는 <br />
+                      No.1 가공우유
                     </span>
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
               </li>
               <li>
-                <span class="brand-slide-img"></span>
+                <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
                     <span class="brand-hover-img"></span>
                     <span class="brand-hover-txt">
-                      빙그레 건강 tft의<br />
-                      단백질 전문 브랜드
+                      진한 맛의 감동 <br />
+                      프리미엄 아이스크림
                     </span>
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
               </li>
               <li>
-                <span class="brand-slide-img"></span>
+                <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
                     <span class="brand-hover-img"></span>
                     <span class="brand-hover-txt">
-                      빙그레 건강 tft의<br />
-                      단백질 전문 브랜드
+                      남자를 위한 건강플랜, <br />
+                      마노플랜
                     </span>
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
               </li>
             </ul>
-            <div class="brand-slide-next">
+            <button class="brand-slide-next">
               <span>다음</span>
-            </div>
+            </button>
           </div>
         </div>
       </section>
       <!-- 고객문의 -->
       <!-- 철호 -->
       <section class="faq">
-        <div class="inner">
+        <div class="faq-inner">
           <h2 class="faq-title">고객문의 및 불편사항</h2>
           <div class="faq-box">
             <div class="faq-consult">
@@ -499,9 +497,9 @@
       </footer>
     </div>
     <script>
-      let upper = function() {
-      document.body.scrollIntoView({ behavior: 'smooth' });
+      let upper = function () {
+        document.body.scrollIntoView({ behavior: "smooth" });
       };
-      </script>
+    </script>
   </body>
 </html>

@@ -366,14 +366,19 @@ body {
 /* 브랜드 */
 .brand {
   margin: 0 25px;
+  padding: 70px 0;
 }
 .brand .brand-inner {
-  width: 1650px;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1650px;
   margin: 0 auto;
 }
 .brand .brand-inner .brand-title {
   position: relative;
   display: block;
+  font-family: Binggrae-Bold, sans-serif;
   font-weight: 700;
   font-size: 38px;
   color: #000;
@@ -384,10 +389,15 @@ body {
 }
 .brand .brand-inner .brand-cate {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.brand .brand-inner .brand-cate .brand-slide-prev {
+  position: relative;
   display: block;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+  background: transparent;
+  border: 0;
 }
 .brand .brand-inner .brand-cate .brand-slide-prev span {
   position: absolute;
@@ -402,13 +412,12 @@ body {
   cursor: pointer;
 }
 .brand .brand-inner .brand-cate .brand-slide {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 1550px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1550px;
   display: flex;
   justify-content: space-between;
+  gap: 1em;
 }
 .brand .brand-inner .brand-cate .brand-slide li {
   position: relative;
@@ -417,40 +426,128 @@ body {
   height: 250px;
   border: 1px solid #edecef;
   border-radius: 30px;
+  flex-grow: 1;
   transition: transform 300ms;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-slide-img {
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(1) .brand-slide-img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-height: 250px;
+  background: url("../images/sec02_logo01.png") no-repeat;
+  background-size: 55%;
+  background-position: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(1) .brand-hover-img {
   display: block;
   width: 240px;
-  height: 250px;
+  height: 40px;
   background: url("../images/sec02_logo01.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(2) .brand-slide-img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-height: 250px;
+  background: url("../images/sec02_logo02.png") no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(2) .brand-hover-img {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url("../images/sec02_logo02.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(3) .brand-slide-img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-height: 250px;
+  background: url("../images/sec02_logo03.png") no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(3) .brand-hover-img {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url("../images/sec02_logo03.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(4) .brand-slide-img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-height: 250px;
+  background: url("../images/sec02_logo04.png") no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(4) .brand-hover-img {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url("../images/sec02_logo04.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(5) .brand-slide-img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-height: 250px;
+  background: url("../images/sec02_logo05.png") no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(5) .brand-hover-img {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url("../images/sec02_logo05.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(6) .brand-slide-img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  min-height: 250px;
+  background: url("../images/sec02_logo06.png") no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.brand .brand-inner .brand-cate .brand-slide li:nth-child(6) .brand-hover-img {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url("../images/sec02_logo06.png") no-repeat;
+  background-size: contain;
   background-position: center;
 }
 .brand .brand-inner .brand-cate .brand-slide li .brand-hover-box {
   position: absolute;
   left: 50%;
-  bottom: -200%;
+  bottom: -170%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 240px;
   height: 250px;
-  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
   border-radius: 30px;
+  visibility: hidden;
 }
 .brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 {
   display: block;
   transform: translateY(30%);
   transition: transform 500ms;
-}
-.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo01.png") no-repeat;
-  background-size: 90px 32px;
-  background-position: 50% 50%;
 }
 .brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-txt::before {
   content: "";
@@ -482,20 +579,11 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-.brand .brand-inner .brand-cate .brand-slide li:hover {
-  border: none;
-  transform: translateY(-5px);
-}
-.brand .brand-inner .brand-cate .brand-slide li:hover .brand-slide-img {
-  display: none;
-}
-.brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% -50%);
-}
-.brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box .brand-hover-box1 {
-  transform: translateY(0);
+.brand .brand-inner .brand-cate .brand-slide-next {
+  position: relative;
+  display: block;
+  background: transparent;
+  border: 0;
 }
 .brand .brand-inner .brand-cate .brand-slide-next span {
   position: absolute;
@@ -509,10 +597,50 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1400px) {
+  .brand .brand-inner .brand-cate .brand-slide li:hover {
+    border: none;
+    box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+    transform: translateY(-5px);
+  }
+  .brand .brand-inner .brand-cate .brand-slide li:hover .brand-slide-img {
+    display: none;
+  }
+  .brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+    visibility: visible;
+  }
+  .brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box .brand-hover-box1 {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .brand-slide-prev,
+.brand-slide-next {
+    display: none !important;
+  }
+  .brand-slide {
+    flex-wrap: wrap;
+  }
+  .brand-slide li {
+    flex-basis: 30%;
+    cursor: pointer;
+  }
+}
 /* 고객문의 */
-.faq .inner .faq-title {
+.faq .faq-inner {
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 70px 25px;
+}
+.faq .faq-inner .faq-title {
   position: relative;
   display: block;
+  font-family: Binggrae-Bold, sans-serif;
   font-weight: 700;
   font-size: 38px;
   color: #1f1f1f;
@@ -521,8 +649,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-.faq .inner .faq-box {
-  width: 1300px;
+.faq .faq-inner .faq-box {
+  width: 100%;
+  max-width: 1300px;
   box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
   border-radius: 30px;
   margin: 0 auto;
@@ -530,13 +659,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.faq .inner .faq-box .faq-consult {
-  width: 1220px;
+.faq .faq-inner .faq-box .faq-consult {
+  width: 100%;
+  max-width: 1220px;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  gap: 1em;
+  margin-top: 20px;
 }
-.faq .inner .faq-box .faq-consult .faq-email {
+.faq .faq-inner .faq-box .faq-consult .faq-email, .faq .faq-inner .faq-box .faq-consult .faq-phone {
+  flex-grow: 1;
+}
+.faq .faq-inner .faq-box .faq-consult .faq-email {
   display: block;
   width: 590px;
   height: 325px;
@@ -546,19 +680,20 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-.faq .inner .faq-box .faq-consult .faq-email h4 {
+.faq .faq-inner .faq-box .faq-consult .faq-email h4 {
+  font-family: Binggrae-Bold, sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #1f1f1f;
   padding-bottom: 30px;
 }
-.faq .inner .faq-box .faq-consult .faq-email p {
+.faq .faq-inner .faq-box .faq-consult .faq-email p {
   letter-spacing: -0.09em;
   line-height: 25px;
   padding-bottom: 70px;
   color: #1f1f1f;
 }
-.faq .inner .faq-box .faq-consult .faq-email button {
+.faq .faq-inner .faq-box .faq-consult .faq-email button {
   width: 160px;
   height: 45px;
   background: #ed1c24;
@@ -568,7 +703,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-.faq .inner .faq-box .faq-consult .faq-phone {
+.faq .faq-inner .faq-box .faq-consult .faq-phone {
   display: block;
   width: 590px;
   height: 325px;
@@ -577,28 +712,29 @@ body {
   padding: 55px 45px;
   border-radius: 30px;
 }
-.faq .inner .faq-box .faq-consult .faq-phone h4 {
+.faq .faq-inner .faq-box .faq-consult .faq-phone h4 {
+  font-family: Binggrae-Bold, sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #1f1f1f;
   padding-bottom: 30px;
 }
-.faq .inner .faq-box .faq-consult .faq-phone p {
+.faq .faq-inner .faq-box .faq-consult .faq-phone p {
   font-size: 46.5px;
   font-weight: 700;
   color: #1f1f1f;
   padding-bottom: 25px;
 }
-.faq .inner .faq-box .faq-consult .faq-phone span {
+.faq .faq-inner .faq-box .faq-consult .faq-phone span {
   color: #1f1f1f;
   letter-spacing: -0.09em;
 }
-.faq .inner .faq-box .faq-consult .faq-phone span span {
+.faq .faq-inner .faq-box .faq-consult .faq-phone span span {
   font-weight: 500;
   color: #e0462e;
   margin-left: 25px;
 }
-.faq .inner .faq-box .faq-more {
+.faq .faq-inner .faq-box .faq-more {
   width: 1220px;
   height: 120px;
   padding-top: 47px;
@@ -606,13 +742,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.faq .inner .faq-box .faq-more h3 {
+.faq .faq-inner .faq-box .faq-more h3 {
+  font-family: Binggrae-Bold, sans-serif;
   font-size: 23px;
   font-weight: 700;
   color: #1f1f1f;
   line-height: 45px;
 }
-.faq .inner .faq-box .faq-more button {
+.faq .faq-inner .faq-box .faq-more button {
   width: 160px;
   height: 45px;
   font-size: 14px;
@@ -623,29 +760,29 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-.faq .inner .faq-box .faq-list {
+.faq .faq-inner .faq-box .faq-more button:hover {
+  background: #ed1c24;
+  color: #fff;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.03);
+}
+.faq .faq-inner .faq-box .faq-list {
   width: 1220px;
   display: flex;
   justify-content: space-between;
+  gap: 1em;
   flex-wrap: wrap;
 }
-.faq .inner .faq-box .faq-list li {
+.faq .faq-inner .faq-box .faq-list li {
   position: relative;
   display: block;
-  width: 590px;
+  flex-basis: 590px;
   height: 80px;
   background: #f9f9f9;
   box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
   border-radius: 30px;
   margin-bottom: 20px;
 }
-.faq .inner .faq-box .faq-list li:nth-child(5) {
-  margin-bottom: 0px;
-}
-.faq .inner .faq-box .faq-list li:nth-child(6) {
-  margin-bottom: 0px;
-}
-.faq .inner .faq-box .faq-list a {
+.faq .faq-inner .faq-box .faq-list a {
   display: block;
   width: 100%;
   height: 100%;
@@ -655,7 +792,7 @@ body {
   line-height: 40px;
   padding: 20px;
 }
-.faq .inner .faq-box .faq-list a::after {
+.faq .faq-inner .faq-box .faq-list a::after {
   content: "";
   position: absolute;
   right: 20px;
@@ -669,14 +806,19 @@ body {
   border-radius: 50%;
   transition: all 300ms;
 }
-.faq .inner .faq-box .faq-list li:hover a {
+.faq .faq-inner .faq-box .faq-list li:hover a {
   font-weight: 700;
   letter-spacing: -0.09em;
 }
-.faq .inner .faq-box .faq-list li:hover a::after {
+.faq .faq-inner .faq-box .faq-list li:hover a::after {
   transform: translateY(-50%) scale(1);
 }
 
+@media screen and (max-width: 1280px) {
+  .faq-list li {
+    flex-basis: 100%;
+  }
+}
 /* 리포트 */
 /* report 부분*/
 .report-inner {
