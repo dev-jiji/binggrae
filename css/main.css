@@ -117,6 +117,7 @@ body {
 
 /* 공통요소 */
 .inner {
+  position: relative;
   display: block;
   width: 100%;
   max-width: 1600px;
@@ -126,14 +127,13 @@ body {
 /* 레이아웃 */
 .wrap {
   width: 100%;
-  margin: auto;
   position: relative;
+  margin: auto;
 }
 
 .submenu {
   z-index: 9999;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   width: 100px;
   top: 85%;
   left: 95%;
@@ -176,10 +176,10 @@ body {
 /* 상단 */
 .header {
   position: fixed;
-  left: 0%;
   top: 0%;
+  left: 0%;
   width: 100%;
-  z-index: 500;
+  z-index: 999;
 }
 .header .header-top {
   display: flex;
@@ -297,13 +297,14 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  background: url("../images/pc_section01_3.jpg") no-repeat center;
+  background: url("../images/pc_section01_3.jpg") no-repeat top;
   background-size: cover;
-  padding: 180px 0 !important;
+  padding: 180px 0;
 }
 .visual .inner {
-  width: 1600px;
-  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
 .visual .inner .visual-box {
   margin: 0 auto;
