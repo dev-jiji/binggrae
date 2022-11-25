@@ -132,8 +132,7 @@ body {
 
 .submenu {
   z-index: 9999;
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   width: 100px;
   top: 85%;
   left: 95%;
@@ -414,8 +413,11 @@ body {
   align-items: center;
   gap: 0 18px;
 }
+.menu .inner .menu-slide .menu-slide-list .menu-box:hover {
+  transform: translateY(-5%);
+}
 .menu .inner .menu-slide .menu-slide-list .menu-box {
-  position: relative;
+  transition: all 1s ease;
 }
 .menu .inner .menu-slide .menu-slide-list .menu-box .menu-slide-img {
   width: 242px;
