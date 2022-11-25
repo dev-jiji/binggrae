@@ -1,6 +1,91 @@
 @charset "UTF-8";
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "Binggrae";
+  src: local("※"), url("../css/font/Binggrae.ttf") format("woff");
+  /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Binggrae-Bold";
+  src: local("※"), url("../css/font/Binggrae-Bold.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Binggrae2";
+  src: local("※"), url("/font/Binggrae2.ttf") format("truetype"), url("/font/Binggrae2.otf") format("opentype");
+  /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Binggrae2-Bold";
+  src: local("※"), url("/font/Binggrae2-Bold.otf") format("opentype"), url("/font/Binggrae2-Bold.ttf") format("truetype");
+  /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2') format('woff2'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BinggraeMelona";
+  src: local("※"), url("/font/BinggraeMelona.otf") format("opentype"), url("/font/BinggraeMelona.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BinggraeMelona-Bold";
+  src: local("※"), url("/font/BinggraeMelona-Bold.otf") format("opentype"), url("/font/BinggraeMelona-Bold.ttf") format("truetype");
+  /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2') format('woff2'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BinggraeTaom";
+  src: local("※"), url("/font/BinggraeTaom.otf") format("opentype"), url("/font/BinggraeTaom.ttf") format("truetype");
+  /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BinggraeTaom-Bold";
+  src: local("※"), url("/font/BinggraeTaom-Bold.otf") format("opentype"), url("/font/BinggraeTaom-Bold.ttf") format("truetype");
+  /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2') format('woff2'); */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream3";
+  src: local("※"), url("/font/SCDream3.otf") format("opentype"), url("/font/SCDream3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream4";
+  src: local("※"), url("/font/SCDream4.otf") format("opentype"), url("/font/SCDream4.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream5";
+  src: local("※"), url("/font/S-CoreDream-5Medium.woff2") format("woff2"), url("/font/S-CoreDream-5Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-Bold";
+  src: local("※"), url("/font/S-CoreDream-6Bold.woff2") format("woff2"), url("/font/S-CoreDream-6Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Y_Spotlight";
+  src: local("※"), url("/font/Y_Spotlight.otf") format("opentype"), url("/font/Y_Spotlight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -293,8 +378,10 @@ body {
 /* 메뉴 */
 .menu {
   position: relative;
+  padding: 70px 0;
 }
 .menu .inner .menu-title {
+  font-family: Binggrae-Bold, sans-serif;
   position: relative;
   display: block;
   height: 32px;
@@ -366,6 +453,7 @@ body {
 /* 브랜드 */
 .brand {
   margin: 0 25px;
+  padding: 70px 0;
 }
 .brand .brand-inner {
   width: 1650px;
@@ -510,6 +598,9 @@ body {
 }
 
 /* 고객문의 */
+.faq {
+  padding: 70px 0;
+}
 .faq .inner .faq-title {
   position: relative;
   display: block;
@@ -679,6 +770,10 @@ body {
 
 /* 리포트 */
 /* report 부분*/
+.report {
+  padding: 70px 0;
+}
+
 .report-inner {
   width: 1600px;
   margin: auto;
