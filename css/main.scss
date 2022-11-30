@@ -3,6 +3,13 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@font-face {
+  font-family: 'Binggrae-Two';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +35,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-family: 'Binggrae-Two', 'Roboto', 'Noto Sans KR', sans-serif;
   color: #000;
 }
 /* 공통요소 */
@@ -96,7 +103,6 @@ body {
 @import 'visual';
 /* 메뉴 */
 @import 'menu';
-
 /* 브랜드 */
 @import 'brand';
 /* 고객문의 */
@@ -217,3 +223,37 @@ body {
     }
   }
 }
+
+//Desktop
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  .header-inner {
+    .header-middle {
+      .nav{
+        .gnb{
+          justify-content: flex-start;
+          width:78vw;
+        }
+      }
+      .menu-logo {
+        padding-left: 0;
+      }
+      .lang{
+        padding-right:0;
+      }
+    }
+  }
+}
+
+//Tablet
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .header-top-menu {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+//Mobile
+@media all and (max-width: 767px) {
+} ;
