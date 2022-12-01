@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "Binggrae-Two";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff") format("woff");
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: "Binggrae";
@@ -83,6 +88,7 @@
 @font-face {
   font-family: "Y_Spotlight";
   src: local("※"), url("/font/Y_Spotlight.otf") format("opentype"), url("/font/Y_Spotlight.ttf") format("truetype");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -111,7 +117,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-family: "Binggrae-Two", "Roboto", "Noto Sans KR", sans-serif;
   color: #000;
 }
 
@@ -178,7 +184,7 @@ body {
   position: fixed;
   top: 0%;
   left: 0%;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
 }
 .header .header-top {
@@ -216,11 +222,10 @@ body {
   transition: all 1s;
 }
 .header .header-middle .nav .gnb {
+  width: 50vw;
   display: inline-flex;
   justify-content: space-between;
-  gap: 0 5rem;
-  vertical-align: middle;
-  margin-right: 4rem;
+  gap: 0 3rem;
 }
 .header .header-middle .nav .gnb:hover .depth {
   opacity: 1;
@@ -232,6 +237,7 @@ body {
 .header .header-middle .nav .gnb > li {
   padding-bottom: 1rem;
   position: relative;
+  white-space: nowrap;
 }
 .header .header-middle .nav .gnb > li > a {
   font-size: 1.5rem;
@@ -1110,4 +1116,25 @@ body {
 }
 .footer-inner .footer-bottom .f-logo span:nth-child(2) {
   font-size: 20px;
+}
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  .header-inner .header-middle .nav .gnb {
+    justify-content: flex-start;
+    width: 78vw;
+  }
+  .header-inner .header-middle .menu-logo {
+    padding-left: 0;
+  }
+  .header-inner .header-middle .lang {
+    padding-right: 0;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .header-top-menu {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
 }
