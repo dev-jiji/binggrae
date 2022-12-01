@@ -55,15 +55,28 @@ body {
   margin: auto;
 }
 
+
 .submenu {
   z-index: 9999;
   position: fixed;
   width: 100px;
-  top: 85%;
-  left: 95%;
+  right: 5%;
+  bottom: 10%;
+  gap: 10px;
+  .chat > .chatImg {
+    animation: motion 0.5s linear 0s infinite alternate;
+    margin-top: 0;
+  }
+  @keyframes motion {
+    0% {
+      padding-bottom: 0px;
+    }
+    100% {
+      padding-bottom: 20px;
+    }
+  }
   .shop,
   .upper {
-    display: inline-block;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -112,7 +125,7 @@ body {
 
 /* report 부분*/
 .report-inner {
-  width: 1600px;
+  width: 100vw;
   margin: auto;
   padding-bottom: 3rem;
 
@@ -124,8 +137,8 @@ body {
     margin: auto;
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
-    width: 1150px;
+    justify-content: center;
+    gap: 0 2rem;
     .btn {
       border-radius: 20px;
       background: red;
@@ -155,105 +168,104 @@ body {
 /* 하단 */
 @import 'footer';
 
-.footer-inner {
-  background-color: black;
-  opacity: 0.8;
-  padding: 1rem;
-
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    .f-info {
-      padding-top: 1rem;
-      padding-right: 1rem;
-      .f-jungbo {
-        margin-right: 20px;
-      }
-      a {
-        color: whitesmoke;
-      }
-    }
-  }
-
-  .footer-middle {
-    margin: 1rem 0;
-    margin-bottom: 3rem;
-    span {
-      color: whitesmoke;
-    }
-  }
-
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    .f-copyright {
-      color: whitesmoke;
-      opacity: 0.3;
-      padding-top: 3rem;
-    }
-    .f-buttons {
-      display: inline-flex;
-      gap: 0 3rem;
-      margin-left: 500px;
-
-      .insta,
-      .youtube,
-      .tft {
-        background: rgb(116, 116, 101);
-        padding: 1rem;
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-      }
-    }
-
-    .f-logo {
-      position: relative;
-      background: rgb(116, 116, 101);
-      border-radius: 30px;
-      padding: 5px 1.5rem;
-      color: whitesmoke;
-      margin-right: 3rem;
-      .arrow {
-        padding-left: 5rem;
-      }
-      span:nth-child(2) {
-        font-size: 20px;
-      }
-    }
-  }
-}
-
 //Desktop
-@media all and (min-width: 1025px) and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
   .header-inner {
     .header-middle {
-      .nav{
-        .gnb{
+      .nav {
+        .gnb {
           justify-content: flex-start;
-          width:78vw;
+          gap: 0 1rem;
         }
       }
       .menu-logo {
         padding-left: 0;
       }
-      .lang{
-        padding-right:0;
+      .lang {
+        padding-right: 0;
       }
     }
   }
 }
 
 //Tablet
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .header-top-menu {
     display: none;
   }
-  .nav {
-    display: none;
+
+  .header-middle {
+    .nav {
+      display: none;
+    }
+    .lang {
+      padding-right: 0rem;
+      .krbutton span {
+        display: none;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding-bottom: 3rem;
   }
 }
 
 //Mobile
 @media all and (max-width: 767px) {
+  .header {
+    .header-top {
+      padding: 0;
+    }
+    .header-middle {
+      margin: 1rem 0;
+    }
+  }
+
+  .footer-top {
+    flex-direction: column;
+    .f-logo {
+      order: 2;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .f-info {
+      order: 1;
+      text-align: center;
+    }
+  }
+
+  .footer-middle {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    .f-copyright {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+      font-size: 10px;
+      margin: 10px;
+    }
+    .f-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .f-buttons {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .f-add {
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    margin: 1rem;
+    a {
+      font-size: 10px;
+      color: white;
+    }
+  }
 } ;
