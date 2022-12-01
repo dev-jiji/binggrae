@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/** @format */
+/* @format */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @font-face {
@@ -131,6 +131,7 @@ body {
   margin: auto;
 }
 
+/*서브메뉴*/
 .submenu {
   z-index: 9999;
   position: fixed;
@@ -297,7 +298,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  max-height: 964px;
+  height: 39.06vw;
   background: url("../images/pc_section01_3.jpg") no-repeat top;
   background-size: cover;
   padding: 180px 0;
@@ -312,9 +313,21 @@ body {
   text-align: center;
   margin-bottom: 45px;
 }
+@media screen and (max-width: 1350px) {
+  .visual .inner .visual-box .visual-box-pc {
+    display: none;
+  }
+}
+.visual .inner .visual-box .visual-box-mb {
+  display: none;
+}
+@media screen and (max-width: 1350px) {
+  .visual .inner .visual-box .visual-box-mb {
+    display: inline-block;
+  }
+}
 .visual .inner .search-box {
   display: block;
-  width: 1020px;
   margin: 0 auto;
 }
 .visual .inner .search-box form {
@@ -322,7 +335,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 60%;
   height: 80px;
   border-radius: 40px;
   box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
@@ -363,7 +376,7 @@ body {
 }
 .visual .inner .search-box .keyword li a {
   display: block;
-  padding: 0 10px;
+  padding: 0 20px;
   line-height: 37px;
   font-size: 12px;
   color: #1f1f1f;
@@ -376,7 +389,6 @@ body {
 .visual .inner .search-box-txt:focus {
   outline: none;
 }
-
 /* 메뉴 */
 .menu {
   position: relative;

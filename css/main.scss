@@ -1,4 +1,4 @@
-/** @format */
+/* @format */
 
 @charset 'utf-8';
 @import "font";
@@ -48,6 +48,7 @@ body {
   margin: auto;
 }
 
+/*서브메뉴*/
 .submenu {
   z-index: 9999;
   position: fixed;
@@ -96,127 +97,11 @@ body {
 @import 'visual';
 /* 메뉴 */
 @import 'menu';
-
 /* 브랜드 */
 @import 'brand';
 /* 고객문의 */
 @import 'faq';
 /* 리포트 */
 @import 'report';
-
-/* report 부분*/
-.report{
-  padding: 70px 0;
-}
-.report-inner {
-  width: 1600px;
-  margin: auto;
-  padding-bottom: 3rem;
-
-  .report-header {
-    text-align: center;
-  }
-
-  .report-box {
-    margin: auto;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    width: 1150px;
-    .btn {
-      border-radius: 20px;
-      background: red;
-      border: 0;
-      padding: 10px 2rem;
-      margin-top: 2rem;
-      span {
-        font-size: 1rem;
-        color: white;
-      }
-    }
-
-    .box-left {
-      p {
-        margin-top: 5rem;
-      }
-    }
-
-    .box-right {
-      p {
-        margin-top: 5rem;
-      }
-    }
-  }
-}
-
 /* 하단 */
 @import 'footer';
-
-.footer-inner {
-  background-color: black;
-  opacity: 0.8;
-  padding: 1rem;
-
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    .f-info {
-      padding-top: 1rem;
-      padding-right: 1rem;
-      .f-jungbo {
-        margin-right: 20px;
-      }
-      a {
-        color: whitesmoke;
-      }
-    }
-  }
-
-  .footer-middle {
-    margin: 1rem 0;
-    margin-bottom: 3rem;
-    span {
-      color: whitesmoke;
-    }
-  }
-
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    .f-copyright {
-      color: whitesmoke;
-      opacity: 0.3;
-      padding-top: 3rem;
-    }
-    .f-buttons {
-      display: inline-flex;
-      gap: 0 3rem;
-      margin-left: 500px;
-
-      .insta,
-      .youtube,
-      .tft {
-        background: rgb(116, 116, 101);
-        padding: 1rem;
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-      }
-    }
-
-    .f-logo {
-      position: relative;
-      background: rgb(116, 116, 101);
-      border-radius: 30px;
-      padding: 5px 1.5rem;
-      color: whitesmoke;
-      margin-right: 3rem;
-      .arrow {
-        padding-left: 5rem;
-      }
-      span:nth-child(2) {
-        font-size: 20px;
-      }
-    }
-  }
-}

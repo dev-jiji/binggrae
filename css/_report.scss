@@ -1,0 +1,44 @@
+/* report 부분*/
+.report {
+  padding: 70px 0;
+}
+.report-inner {
+  width: 1600px;
+  margin: auto;
+  padding-bottom: 3rem;
+
+  .report-header {
+    text-align: center;
+  }
+
+  .report-box {
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    .btn {
+      border-radius: 20px;
+      background: red;
+      border: 0;
+      padding: 10px 2rem;
+      margin-top: 2rem;
+      span {
+        font-size: 1rem;
+        color: white;
+      }
+    }
+
+    .box-left {
+      p {
+        margin-top: 5rem;
+      }
+    }
+
+    .box-right {
+      p {
+        margin-top: 5rem;
+      }
+    }
+  }
+}
