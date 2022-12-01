@@ -1,0 +1,68 @@
+.footer-inner {
+  background-color: black;
+  opacity: 0.8;
+  padding: 1rem;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    .f-info {
+      padding-top: 1rem;
+      padding-right: 1rem;
+      .f-jungbo {
+        margin-right: 20px;
+      }
+      a {
+        color: whitesmoke;
+      }
+    }
+  }
+
+  .footer-middle {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+    span {
+      color: whitesmoke;
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    .f-copyright {
+      color: whitesmoke;
+      opacity: 0.3;
+      padding-top: 3rem;
+    }
+    .f-buttons {
+      display: inline-flex;
+      gap: 0 3rem;
+      margin-left: 500px;
+
+      .insta,
+      .youtube,
+      .tft {
+        background: rgb(116, 116, 101);
+        padding: 1rem;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .f-logo {
+      position: relative;
+      background: rgb(116, 116, 101);
+      border-radius: 30px;
+      padding: 5px 1.5rem;
+      color: whitesmoke;
+      margin-right: 3rem;
+      .arrow {
+        padding-left: 5rem;
+      }
+      span:nth-child(2) {
+        font-size: 20px;
+      }
+    }
+  }
+}
