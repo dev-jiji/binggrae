@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* @format */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @font-face {
@@ -139,10 +140,26 @@ body {
 .submenu {
   z-index: 9999;
   position: fixed;
-  width: 100px;
   right: 5%;
   bottom: 10%;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
+}
+.submenu .chatText {
+  position: absolute;
+  top: 25px;
+  left: -200px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 20px;
+  background-color: white;
+  padding: 1rem;
+  font-weight: 700;
+  display: none;
+}
+.submenu .chat:hover + .chatText {
+  display: block;
 }
 .submenu .chat > .chatImg {
   -webkit-animation: motion 0.5s linear 0s infinite alternate;
