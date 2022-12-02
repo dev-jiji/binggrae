@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* @format */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @font-face {
@@ -1092,40 +1093,6 @@ body {
     font-size: 12px;
   }
 }
-/* report 부분*/
-.report-inner {
-  width: 100vw;
-  margin: auto;
-  padding-bottom: 3rem;
-}
-.report-inner .report-header {
-  text-align: center;
-}
-.report-inner .report-box {
-  margin: auto;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 0 2rem;
-}
-.report-inner .report-box .btn {
-  border-radius: 20px;
-  background: red;
-  border: 0;
-  padding: 10px 2rem;
-  margin-top: 2rem;
-}
-.report-inner .report-box .btn span {
-  font-size: 1rem;
-  color: white;
-}
-.report-inner .report-box .box-left p {
-  margin-top: 5rem;
-}
-.report-inner .report-box .box-right p {
-  margin-top: 5rem;
-}
-
 /* 하단 */
 /** @format */
 .footer-inner {
