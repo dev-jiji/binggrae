@@ -1,11 +1,16 @@
 .brand {
-  margin: 0 25px ;
+  margin: 0 25px;
+  padding: 70px 0;
   .brand-inner {
-    width: 1650px;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     .brand-title {
       position: relative;
       display: block;
+      font-family: "Binggrae-Bold", sans-serif;
       font-weight: 700;
       font-size: 38px;
       color: #000;
@@ -16,11 +21,14 @@
     }
     .brand-cate {
       position: relative;
-      display: block;
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
       .brand-slide-prev {
+        position: relative;
+        display: block;
+        background: transparent;
+        border: 0;
         span {
           position: absolute;
           left: 0;
@@ -35,13 +43,13 @@
         }
       }
       .brand-slide {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 1550px;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1550px;
         display: flex;
         justify-content: space-between;
+        gap: 2%;
         li {
           position: relative;
           display: block;
@@ -49,38 +57,107 @@
           height: 250px;
           border: 1px solid #edecef;
           border-radius: 30px;
-          transition: transform 300ms;
+          transition: transform 1s;
           .brand-slide-img {
             display: block;
-            width: 240px;
-            height: 250px;
-            background: url("../images/sec02_logo01.png") no-repeat;
-            background-position: center;
+            width: 100%;
+            height: 100%;
+          }
+          &:nth-child(1) {
+            .brand-slide-img {
+              background: url("../images/sec02_logo01.png") no-repeat center /55%;
+            }
+            .brand-hover-img {
+              display: block;
+              width: 240px;
+              height: 40px;
+              background: url("../images/sec02_logo01.png") no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+          &:nth-child(2) {
+            .brand-slide-img {
+              background: url("../images/sec02_logo02.png") no-repeat center /55%;
+            }
+            .brand-hover-img {
+              display: block;
+              width: 240px;
+              height: 40px;
+              background: url("../images/sec02_logo02.png") no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+          &:nth-child(3) {
+            .brand-slide-img {
+              background: url("../images/sec02_logo03.png") no-repeat center /55%;
+            }
+            .brand-hover-img {
+              display: block;
+              width: 240px;
+              height: 40px;
+              background: url("../images/sec02_logo03.png") no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+          &:nth-child(4) {
+            .brand-slide-img {
+              background: url("../images/sec02_logo04.png") no-repeat center /55%;
+            }
+            .brand-hover-img {
+              display: block;
+              width: 240px;
+              height: 40px;
+              background: url("../images/sec02_logo04.png") no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+          &:nth-child(5) {
+            .brand-slide-img {
+              background: url("../images/sec02_logo05.png") no-repeat center /55%;
+            }
+            .brand-hover-img {
+              display: block;
+              width: 240px;
+              height: 40px;
+              background: url("../images/sec02_logo05.png") no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+          }
+          &:nth-child(6) {
+            .brand-slide-img {
+              background: url("../images/sec02_logo06.png") no-repeat center /55%;
+            }
+            .brand-hover-img {
+              display: block;
+              width: 240px;
+              height: 40px;
+              background: url("../images/sec02_logo06.png") no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
           }
           .brand-hover-box {
             position: absolute;
             left: 50%;
-            bottom: -200%;
+            bottom: -170%;
             transform: translate(-50%, -50%);
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 240px;
             height: 250px;
-            box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+            // box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
             border-radius: 30px;
+            visibility: hidden;
             .brand-hover-box1 {
               display: block;
               transform: translateY(30%);
-              transition: transform 500ms;
-              .brand-hover-img {
-                display: block;
-                width: 240px;
-                height: 40px;
-                background: url("../images/sec02_logo01.png") no-repeat;
-                background-size: 90px 32px;
-                background-position: 50% 50%;
-              }
+              transition: transform 700ms;
               .brand-hover-txt::before {
                 content: "";
                 display: block;
@@ -102,7 +179,7 @@
               left: 50%;
               bottom: 10px;
               transform: translateX(-50%);
-              width: 225px;
+              width: 90%;
               height: 45px;
               background: #ed1c24;
               color: #fff;
@@ -114,23 +191,12 @@
             }
           }
         }
-        li:hover {
-          border: none;
-          transform: translateY(-5px);
-          .brand-slide-img {
-            display: none;
-          }
-          .brand-hover-box {
-            left: 50%;
-            top: 50%;
-            transform: translate(-50% -50%);
-            .brand-hover-box1 {
-              transform: translateY(0);
-            }
-          }
-        }
       }
       .brand-slide-next {
+        position: relative;
+        display: block;
+        background: transparent;
+        border: 0;
         span {
           position: absolute;
           right: 0;
@@ -143,6 +209,55 @@
           cursor: pointer;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 1455px) {
+  .brand {
+    .brand-inner {
+      .brand-cate {
+        .brand-slide {
+          li:hover {
+            border: none;
+            box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
+            transform: translateY(-10px);
+            .brand-slide-img {
+              display: none;
+            }
+            .brand-hover-box {
+              left: 50%;
+              top: 50%;
+              transform: translate(-50% -50%);
+              visibility: visible;
+              .brand-hover-box1 {
+                transform: translateY(0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .brand-slide {
+    li:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .brand-slide-prev,
+  .brand-slide-next {
+    display: none !important;
+  }
+  .brand-slide {
+    flex-wrap: wrap;
+    li {
+      height: 200px !important;
+      flex-basis: 30%;
+      // flex-shrink: 30%;
+      cursor: pointer;
     }
   }
 }
