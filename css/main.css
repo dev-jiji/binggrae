@@ -140,10 +140,26 @@ body {
 .submenu {
   z-index: 9999;
   position: fixed;
-  width: 100px;
   right: 5%;
   bottom: 10%;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
+}
+.submenu .chatText {
+  position: absolute;
+  top: 25px;
+  left: -200px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 20px;
+  background-color: white;
+  padding: 1rem;
+  font-weight: 700;
+  display: none;
+}
+.submenu .chat:hover + .chatText {
+  display: block;
 }
 .submenu .chat > .chatImg {
   -webkit-animation: motion 0.5s linear 0s infinite alternate;
