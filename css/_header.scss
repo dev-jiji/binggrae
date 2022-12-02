@@ -6,6 +6,8 @@
   left: 0%;
   width: 100vw;
   z-index: 999;
+  transition: all 0.5s;
+
   .header-top {
     display: flex;
     justify-content: flex-end;
@@ -121,4 +123,7 @@
       }
     }
   }
+}
+.active{
+  background-color: white;
 }

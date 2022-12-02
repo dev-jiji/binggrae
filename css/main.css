@@ -224,6 +224,7 @@ body {
   left: 0%;
   width: 100vw;
   z-index: 999;
+  transition: all 0.5s;
 }
 .header .header-top {
   display: flex;
@@ -333,6 +334,10 @@ body {
 .header .header-middle .lang .lang-menu {
   font-size: 2rem;
   vertical-align: middle;
+}
+
+.active {
+  background-color: white;
 }
 
 /* 비주얼 */
