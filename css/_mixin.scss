@@ -1,0 +1,6 @@
+// 태블릿1
+@mixin tablet1 {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
