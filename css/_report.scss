@@ -1,15 +1,13 @@
+/* report 부분*/
 .report {
-  padding: 70px 25px;
+  padding: 70px 0;
 }
 .report-inner {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
+  width: 1600px;
+  margin: auto;
   padding-bottom: 3rem;
 
   .report-header {
-    font-family: "Binggrae-Bold", sans-serif;
-    font-size: 38px;
     text-align: center;
   }
 
@@ -18,8 +16,7 @@
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1300px;
+    width: 1150px;
     .btn {
       border-radius: 20px;
       background: red;
@@ -29,36 +26,18 @@
       span {
         font-size: 1rem;
         color: white;
-        letter-spacing: -0.09em;
       }
     }
-    .box-left,
-    .box-right {
-      width: 48.5%;
-      padding: 0 25px;
+    .box-left {
       p {
         margin-top: 5rem;
       }
     }
-  }
-}
-@media screen and (max-width: 768px) {
-  .report-header {
-    font-size: 22px !important;
-  }
-  .report-box {
-    flex-wrap: wrap;
-  }
-  .box-left,
-  .box-right {
-    width: 100% !important;
-  }
-  .box-left {
-    margin-bottom: 10px;
-  }
-  @at-root .btn {
-    span {
-      font-size: 12px;
+
+    .box-right {
+      p {
+        margin-top: 5rem;
+      }
     }
   }
 }
