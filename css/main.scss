@@ -1,14 +1,16 @@
 /* @format */
 
 @charset 'utf-8';
+
 @import "font";
 @import "mixin";
   
 
+
 @font-face {
-  font-family: "Binggrae-Two";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff")
-    format("woff");
+  font-family: 'Binggrae-Two';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +39,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   color: #000;
 }
 /* 공통요소 */
@@ -57,17 +59,36 @@ body {
   margin: auto;
 }
 
-
 .submenu {
   z-index: 9999;
   position: fixed;
-  width: 100px;
   right: 5%;
   bottom: 10%;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  .chatText{
+    position:absolute;
+    top:25px;
+    left:-200px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 20px;
+    background-color: white;
+    padding:1rem;
+    font-weight: 700;
+    display: none;
+  }
+  .chat{
+    &:hover + .chatText{
+      display:block;
+    }
+  }
+
   .chat > .chatImg {
     animation: motion 0.5s linear 0s infinite alternate;
     margin-top: 0;
+    
   }
   @keyframes motion {
     0% {
@@ -102,7 +123,7 @@ body {
 }
 
 .red::after {
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   width: 5px;
@@ -113,15 +134,15 @@ body {
 }
 
 /* 상단 */
-@import "header";
+@import 'header';
 /* 비주얼 */
-@import "visual";
+@import 'visual';
 /* 메뉴 */
-@import "menu";
+@import 'menu';
 /* 브랜드 */
-@import "brand";
+@import 'brand';
 /* 고객문의 */
-@import "faq";
+@import 'faq';
 /* 리포트 */
 @import 'report';
 /* 하단 */
