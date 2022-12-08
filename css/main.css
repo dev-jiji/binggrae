@@ -471,6 +471,11 @@ body.active {
     display: inline-block;
   }
 }
+@media (max-width: 767px) {
+  .visual .inner .visual-box .visual-box-mb {
+    width: 60%;
+  }
+}
 .visual .inner .search-box {
   display: block;
   margin: 0 auto;
@@ -486,18 +491,23 @@ body.active {
   box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
   background-color: #fff;
   margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 20px;
+  padding-left: 55px;
+  padding-right: 15px;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1024px) {
   .visual .inner .search-box form {
     height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .visual .inner .search-box form {
+    max-height: 45px;
   }
 }
 .visual .inner .search-box form::before {
   content: "";
   position: absolute;
-  left: 40px;
+  left: 30px;
   top: 50%;
   transform: translateY(-50%);
   width: 19px;
@@ -513,29 +523,70 @@ body.active {
   border-radius: 30px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .visual .inner .search-box form .search-enter {
+    font-size: 8px;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
 .visual .inner .search-box .keyword {
   display: flex;
   margin-top: 40px;
   justify-content: center;
   gap: 0 20px;
 }
+@media (max-width: 767px) {
+  .visual .inner .search-box .keyword {
+    gap: 0 10px;
+    margin-top: 20px;
+  }
+}
 .visual .inner .search-box .keyword li {
   border-radius: 18.5px;
   /* box-shadow: 0px 2px 9.8px 0.2px rgb(0 0 0 / 8%); */
   border: solid 1px #edecef;
+  padding: 0 50px;
+}
+@media (max-width: 1300px) {
+  .visual .inner .search-box .keyword li {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .visual .inner .search-box .keyword li {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .visual .inner .search-box .keyword li {
+    padding: 0 20px;
+  }
 }
 .visual .inner .search-box .keyword li a {
-  min-width: 120px;
   display: block;
-  padding: 0px 30px;
-  line-height: 30px;
+  height: 37px;
+  line-height: 37px;
   font-size: 12px;
   color: #1f1f1f;
+}
+@media (max-width: 767px) {
+  .visual .inner .search-box .keyword li a {
+    font-size: 8px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 .visual .inner .search-box .search-box-txt {
   position: relative;
   display: block;
   border: none;
+}
+@media (max-width: 767px) {
+  .visual .inner .search-box .search-box-txt {
+    font-size: 8px;
+  }
 }
 .visual .inner .search-box .search-box-txt:focus {
   outline: none;
