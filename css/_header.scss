@@ -1,8 +1,7 @@
 /** @format */
 
-
 body.active {
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .header {
@@ -18,10 +17,10 @@ body.active {
     display: flex;
     justify-content: flex-end;
     padding: 5px 0;
-    border-bottom:1px solid rgb(199, 189, 189);
+    border-bottom: 1px solid rgb(199, 189, 189);
     .header-top-menu {
       padding-right: 3rem;
-      z-index:100;
+      z-index: 100;
       span:first-child {
         margin-right: 1.5rem;
       }
@@ -45,7 +44,7 @@ body.active {
     .menu-logo {
       display: inline-block;
       padding-left: 3rem;
-      z-index:100;
+      z-index: 100;
     }
     .nav {
       &:hover + .header-bg {
@@ -101,8 +100,8 @@ body.active {
       background-color: whitesmoke;
     }
     .lang {
-      margin-right:6.5rem;
-      z-index:100;
+      margin-right: 6.5rem;
+      z-index: 100;
       position: relative;
       a {
         text-align: center;
@@ -116,7 +115,7 @@ body.active {
         position: absolute;
         flex-direction: column;
         right: 4%;
-        display:none;
+        display: none;
         span {
           font-size: 1.2rem;
           padding: 8px 14px;
@@ -127,53 +126,53 @@ body.active {
         padding-right: 1.5rem;
       }
       .mbt {
-        position:absolute;
-        border:0;
+        position: absolute;
+        border: 0;
         background: transparent;
         cursor: pointer;
-        width:30px;
-        height:24px;
+        width: 30px;
+        height: 25px;
         span {
-          position:absolute;
-          display:block;
-          left:0%;
-          top:0%;
-          width:100%;
-          height:2px;
-          background:#222;
-          transition: background 0.3s;
+          position: absolute;
+          display: block;
+          left: 0%;
+          top: 0%;
+          width: 100%;
+          height: 2px;
+          background: #222;
+          transition: background 0.5s;
         }
         span:nth-child(1) {
-          top:0%;
-          transform-origin:0 50%;
-          transition:transform 0.3s;
-         }
-         span:nth-child(1).active{
-          transform:rotate(45deg);
-         }
-        span:nth-child(2){
-          top:calc(50%);
+          top: 0%;
+          transform-origin: 0 50%;
+          transition: transform 0.3s;
+        }
+        span:nth-child(1).active {
+          transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+          top: calc(50%);
           transition: opacity 0.3s;
-         }
-         span:nth-child(2).active{
+        }
+        span:nth-child(2).active {
           opacity: 0;
-         }
-        span:nth-child(3){
-          top:100%;
-          transform-origin:0 50%;
-          transition:transform 0.3s;
-         }
-         span:nth-child(3).active{
+        }
+        span:nth-child(3) {
+          top: 100%;
+          transform-origin: 0 50%;
+          transition: transform 0.3s;
+        }
+        span:nth-child(3).active {
           transform: rotate(-45deg);
-         }
+        }
       }
     }
   }
 
   .hamMenu.active {
-    left: 0% !important;
-    visibility: visible !important;
-    opacity:1 !important;
+    left: 0%;
+    visibility: visible;
+    opacity: 1;
   }
 
   .hamMenu {
@@ -186,7 +185,7 @@ body.active {
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    opacity:0;
+    opacity: 0;
     transition: visibility 1s, opacity 1s;
 
     .black-bg {
@@ -195,8 +194,7 @@ body.active {
       top: 0%;
       width: 100vw;
       height: 100vh;
-      background: url(/images/pc_section02_3.jpg);
-      opacity: 1;
+      background: url('../images/pc_section02_3.jpg');
     }
 
     .ham-container {
