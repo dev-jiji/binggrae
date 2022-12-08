@@ -1,6 +1,18 @@
 // 태블릿1
 @mixin tablet1 {
-  @media (max-width: 1260px) {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+// 태블릿2
+@mixin tablet2 {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+// 모바일1
+@mixin mb {
+  @media (max-width: 767px) {
     @content;
   }
 }
