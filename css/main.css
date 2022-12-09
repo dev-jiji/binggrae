@@ -194,6 +194,9 @@ body {
 .submenu .upper {
   background-color: black;
 }
+.submenu .upper img {
+  transform: rotate(180deg);
+}
 
 .box {
   width: 550px;

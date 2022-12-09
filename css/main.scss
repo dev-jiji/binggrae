@@ -39,6 +39,7 @@ body {
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   color: #000;
 }
+
 /* 공통요소 */
 
 .inner {
@@ -50,6 +51,7 @@ body {
 }
 
 /* 레이아웃 */
+
 .wrap {
   width: 100%;
   position: relative;
@@ -82,11 +84,13 @@ body {
     }
   }
 
+
   .chat > .chatImg {
     animation: motion 0.5s linear 0s infinite alternate;
     margin-top: 0;
   }
   
+
   @keyframes motion {
     0% {
       padding-bottom: 0px;
@@ -95,18 +99,25 @@ body {
       padding-bottom: 20px;
     }
   }
+
+
   .shop,
   .upper {
     width: 60px;
     height: 60px;
     border-radius: 50%;
   }
+
   .shop {
     background-color: whitesmoke;
     border: 0;
   }
+
   .upper {
     background-color: black;
+    img{
+      transform:rotate(180deg);
+    }
   }
 }
 
