@@ -17,11 +17,6 @@
   //   },
   // });
 
-  // window.onresize = function(event){
-  //   var innerWidth = window.innerWidth;
-  //   innerWidth <= "1280" ? body.style.borderColor = "blue" : body.style.borderColor = "black";
-  // }
-
   // window.onresize = function (event) {
   var innerWidth = window.innerWidth;
   // console.log(innerWidth);
