@@ -21,17 +21,22 @@
         @media screen and (max-width: 1350px) {
           display: none;
         }
+        @include mb {
+          
+        }
       }
       .visual-box-mb {
         display: none;
         @media screen and (max-width: 1350px) {
           display: inline-block;
         }
+        @include mb {
+          width: 60%;
+        }
       }
     }
     .search-box {
       display: block;
-
       margin: 0 auto;
 
       form {
@@ -45,15 +50,19 @@
         box-shadow: 0px 5px 24.3px 2.7px rgb(0 0 0 / 9%);
         background-color: #fff;
         margin: 0 auto;
-        padding-left: 80px;
-        padding-right: 20px;
+        padding-left: 55px;
+        padding-right: 15px;
         @include tablet1 {
           height: 60px;
         }
+        @include mb {
+          max-height: 45px;
+        }
+
         &::before {
           content: "";
           position: absolute;
-          left: 40px;
+          left: 30px;
           top: 50%;
           transform: translateY(-50%);
           width: 19px;
@@ -69,6 +78,13 @@
           border: 0;
           border-radius: 30px;
           cursor: pointer;
+
+          @include mb {
+            font-size: 8px;
+            width: 100px;
+            height: 25px;
+            line-height: 25px;
+          }
         }
       }
       .keyword {
@@ -76,39 +92,59 @@
         margin-top: 40px;
         justify-content: center;
         gap: 0 20px;
-        @include tablet1 {
-          
-      }
-
+        @include mb {
+          gap: 0 10px;
+          margin-top: 20px;
+        }
         li {
           border-radius: 18.5px;
           /* box-shadow: 0px 2px 9.8px 0.2px rgb(0 0 0 / 8%); */
           border: solid 1px #edecef;
+          padding: 0 50px;
+          @include tablet2 {
+            padding: 0 40px;
+          }
+          @include tablet1 {
+            padding: 0 30px;
+          }
+          @include mb {
+            padding: 0 20px;
+          }
           a {
-            min-width: 120px;
             display: block;
-            padding: 0px 30px;
-            line-height: 30px;
+            // min-width: 100px;
+            height: 37px;
+            // padding: 0px 30px;
+            line-height: 37px;
             font-size: 12px;
             color: #1f1f1f;
+            @include mb {
+              font-size: 8px;
+              height: 25px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+      .search-box-txt {
+        position: relative;
+        display: block;
+        border: none;
+
+        @include mb {
+          font-size: 8px;
+        }
+        &:focus {
+          outline: none;
         }
       }
     }
-    .search-box-txt {
-      position: relative;
-      display: block;
-      border: none;
-      &:focus {
-        outline: none;
-      }
+
+    // 태블릿
+    @media screen and (max-width: 1024px) {
+    }
+    // 모바일
+    @media screen and (max-width: 767px) {
     }
   }
-
-  // 태블릿
-  @media screen and (max-width: 1024px) {
-  }
-  // 모바일
-  @media screen and (max-width: 767px) {
-  }
-}
 }
