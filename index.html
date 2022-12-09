@@ -79,9 +79,6 @@
     />
     <!-- css 초기화 -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <!-- fontello -->
-    <link rel="stylesheet" href="css/fontello/css/fontello.css" />
-
     <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/e7ed03fbb3.js"
@@ -91,10 +88,10 @@
   <body>
     <div class="wrap">
       <!-- 서브메뉴-->
-      
       <div class="submenu">
-
-        <span class="chat"><img src="images/chat_img.png" class="chatImg"></span>
+        <span class="chat"
+          ><img src="images/chat_img.png" class="chatImg"
+        /></span>
         <span class="chatText">무엇을 도와드릴까요?</span>
         <button class="shop">SHOP</button>
         <button onclick="upper()" class="upper">
@@ -105,7 +102,6 @@
       <!-- 상단 -->
       <header class="header">
         <div class="header-inner">
-          
           <!-- 헤더 상단-->
           <div class="header-top">
             <span class="header-top-menu">
@@ -115,6 +111,7 @@
               <span>인재채용 <img src="images/link_arrow02.png" /></span>
             </span>
           </div>
+
           <!-- 헤더 가운데-->
           <div class="header-middle">
             <a href="#" class="menu-logo"><img src="images/logo-pc.png" /></a>
@@ -199,11 +196,98 @@
                 <span>CN</span>
               </span>
               <img src="./images/lang_btn.png" />
-              <span class="lang-menu"><i class="fa-solid fa-bars"></i></span>
+              <button class="mbt" id="mbt">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </span>
           </div>
+          <!-- 햄버거메뉴-->
+          <nav class="hamMenu" id="hamMenu">
+            <div class="black-bg"></div>
+            <div class="ham-container">
+              <div class="company-intro">
+                <ul class="company-intro-inner">
+                  <li>
+                    <a href="#"><h2>회사소개</h2></a>
+                  </li>
+                  <li><a href="#">CEO인사말</a></li>
+                  <li><a href="#">경영이념</a></li>
+                  <li><a href="#">사업분야</a></li>
+                  <li><a href="#">히스토리</a></li>
+                </ul>
+              </div>
+              <div class="item-intro">
+                <ul class="item-intro-inner">
+                  <li>
+                    <a href="#"><h2>제품소개</h2></a>
+                  </li>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">아이스크림</a></li>
+                  <li><a href="#">우유/치즈</a></li>
+                  <li><a href="#">발효유</a></li>
+                  <li><a href="#">커피</a></li>
+                  <li><a href="#">주스</a></li>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">스낵/디저트</a></li>
+                  <li><a href="#">건강지향</a></li>
+                  <li><a href="#">수출제품</a></li>
+                </ul>
+              </div>
+              <div class="manage">
+                <ul class="manage-inner">
+                  <li>
+                    <a href="#"><h2>지속가능경영</h2></a>
+                  </li>
+                  <li><a href="#">Eco-Friendly</a></li>
+                  <li><a href="#">Shared Value</a></li>
+                  <li><a href="#">Global Integrity</a></li>
+                  <li><a href="#">윤리준법경영</a></li>
+                  <li><a href="#">사회공헌</a></li>
+                  <li><a href="#">보고서 및 정책</a></li>
+                </ul>
+              </div>
+              <div class="invest">
+                <ul class="invest-inner">
+                  <li>
+                    <a href="#"><h2>투자정보</h2></a>
+                  </li>
+                  <li><a href="#">재무정보</a></li>
+                  <li><a href="#">주식정보</a></li>
+                  <li><a href="#">전자정보</a></li>
+                  <li><a href="#">공시정보</a></li>
+                  <li><a href="#">IR자료실</a></li>
+                </ul>
+              </div>
+              <div class="news">
+                <ul class="news-inner">
+                  <li><a href="#"><h3>뉴스룸</h3></a></li>
+                  <li><a href="#">전체보기</a></li>
+                  <li><a href="#">새소식</a></li>
+                  <li><a href="#">보도자료</a></li>
+                  <li><a href="#">빙그레 스토리</a></li>
+                  <li><a href="#">미디어 라이브러리</a></li>
+                </ul>
+              </div>
+              <div class="cs">
+                <ul class="cs-inner">
+                  <li><a href="#"><h2>고객센터</h2></a></li>
+                  <li><a href="#">고객상담</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">1:1 문의하기</a></li>
+                  <li><a href="#">제품공급문의</a></li>
+                  <li><a href="#">사이버 부정신고</a></li>
+                  <li><a href="#">안전신문고</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
       </header>
+
+
 
       <!-- 비주얼 -->
       <section class="visual">
@@ -410,7 +494,8 @@
               <div class="faq-phone">
                 <h4>전화 상담</h4>
                 <p>080.022.0056</p>
-                <span>월~금(공휴일 제외)
+                <span
+                  >월~금(공휴일 제외)
                   <span>09:00~17:30</span>
                 </span>
               </div>
@@ -507,7 +592,9 @@
                 <span><img src="./images/flag_store.png" /></span>
 
                 <span> Flagship store <b>SoftLab</b></span>
-                <span class="arrow"><img src="./images/select_btn01.png"/></span>
+                <span class="arrow"
+                  ><img src="./images/select_btn01.png"
+                /></span>
               </button>
             </span>
           </div>
@@ -517,10 +604,9 @@
         </div>
       </footer>
     </div>
-    <script>
-      let upper = function () {
-        document.body.scrollIntoView({ behavior: 'smooth' });
-      };
-    </script>
+    <script src="/js/script.js" defer></script>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/report.js" defer></script>
+    <script src="/js/footer.js" defer></script>
   </body>
 </html>
