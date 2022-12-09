@@ -1,11 +1,8 @@
-/* @format */
 
 @charset 'utf-8';
-
 @import "font";
 @import "mixin";
   
-
 
 @font-face {
   font-family: 'Binggrae-Two';
@@ -88,8 +85,8 @@ body {
   .chat > .chatImg {
     animation: motion 0.5s linear 0s infinite alternate;
     margin-top: 0;
-    
   }
+  
   @keyframes motion {
     0% {
       padding-bottom: 0px;
