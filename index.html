@@ -87,16 +87,26 @@
       src="https://kit.fontawesome.com/e7ed03fbb3.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <script src="js/brand.js" defer></script>
     <script src="js/faq.js" defer></script>
   </head>
   <body>
     <div class="wrap">
       <!-- 서브메뉴-->
-      
-      <div class="submenu">
 
-        <span class="chat"><img src="images/chat_img.png" class="chatImg"></span>
+      <div class="submenu">
+        <span class="chat"
+          ><img src="images/chat_img.png" class="chatImg"
+        /></span>
         <span class="chatText">무엇을 도와드릴까요?</span>
         <button class="shop">SHOP</button>
         <button onclick="upper()" class="upper">
@@ -107,7 +117,6 @@
       <!-- 상단 -->
       <header class="header">
         <div class="header-inner">
-          
           <!-- 헤더 상단-->
           <div class="header-top">
             <span class="header-top-menu">
@@ -301,12 +310,12 @@
       <section class="brand">
         <div class="brand-inner">
           <h2 class="brand-title">brand shop</h2>
-          <div class="brand-cate">
+          <div class="swiper brand-cate">
             <button class="brand-slide-prev">
               <span>이전</span>
             </button>
-            <ul class="brand-slide">
-              <li>
+            <div class="swiper-wrapper brand-slide">
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -318,8 +327,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -330,8 +339,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -343,8 +352,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -356,8 +365,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -369,8 +378,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -382,8 +391,21 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="brand-slide-img"></a>
+                <div class="brand-hover-box">
+                  <div class="brand-hover-box1">
+                    <span class="brand-hover-img"></span>
+                    <span class="brand-hover-txt">
+                      맛과 건강의 완벽한 조화, <br />
+                      비바시티
+                    </span>
+                  </div>
+                  <button class="brand-hover-button">구입하기</button>
+                </div>
+              </div>
+            </div>
             <button class="brand-slide-next">
               <span>다음</span>
             </button>
@@ -412,7 +434,8 @@
               <div class="faq-phone">
                 <h4>전화 상담</h4>
                 <p>080.022.0056</p>
-                <span>월~금(공휴일 제외)
+                <span
+                  >월~금(공휴일 제외)
                   <span>09:00~17:30</span>
                 </span>
               </div>
@@ -509,7 +532,9 @@
                 <span><img src="./images/flag_store.png" /></span>
 
                 <span> Flagship store <b>SoftLab</b></span>
-                <span class="arrow"><img src="./images/select_btn01.png"/></span>
+                <span class="arrow"
+                  ><img src="./images/select_btn01.png"
+                /></span>
               </button>
             </span>
           </div>
@@ -521,7 +546,7 @@
     </div>
     <script>
       let upper = function () {
-        document.body.scrollIntoView({ behavior: 'smooth' });
+        document.body.scrollIntoView({ behavior: "smooth" });
       };
     </script>
   </body>
