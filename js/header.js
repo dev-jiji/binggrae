@@ -1,3 +1,5 @@
+/** @format */
+
 const header = document.querySelector('.header');
 let scTop = 0;
 
@@ -10,8 +12,23 @@ window.addEventListener('scroll', function () {
   }
 });
 
-let upper = function () {
-  document.body.scrollIntoView({ behavior: 'smooth' });
+let arrow = document.querySelector('.upper img');
+addEventListener('scroll', () => {
+  let scrollY = window.scrollY;
+  scrollY == 0
+    ? (arrow.style.transform = 'rotate(180deg)')
+    : (arrow.style.transform = 'rotate(0deg)');
+});
+
+let upper = () => {
+  let pos = 0;
+  arrow.style.transform === 'rotate(180deg)'
+    ? (pos = document.body.scrollHeight)
+    : (pos = 0);
+  window.scrollTo({
+    top: pos,
+    behavior: 'smooth',
+  });
 };
 
 const hamMenu = document.getElementById('hamMenu');
