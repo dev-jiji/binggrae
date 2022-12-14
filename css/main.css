@@ -697,17 +697,13 @@ body.active {
 }
 .brand .brand-inner .brand-cate {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
+  display: block;
+}
+.brand .brand-inner .brand-cate .brand-slide-prev,
+.brand .brand-inner .brand-cate .brand-slide-next {
+  z-index: 99;
 }
 .brand .brand-inner .brand-cate .brand-slide-prev {
-  position: relative;
-  display: block;
-  background: transparent;
-  border: 0;
-}
-.brand .brand-inner .brand-cate .brand-slide-prev span {
   position: absolute;
   left: 0;
   top: 50%;
@@ -715,100 +711,80 @@ body.active {
   width: 8px;
   height: 15px;
   background: url("../images/prev_arrow.png") no-repeat;
-  background-size: contain;
-  font-size: 0;
+  border: 0;
   cursor: pointer;
 }
-.brand .brand-inner .brand-cate .brand-slide {
+.brand .brand-inner .brand-slide {
   position: relative;
-  margin: 0 auto;
   width: 100%;
   max-width: 1550px;
   display: flex;
   justify-content: space-between;
-  gap: 2%;
 }
-.brand .brand-inner .brand-cate .brand-slide li {
+.brand .brand-inner .brand-slide .swiper-slide {
   position: relative;
   display: block;
   width: 240px;
   height: 250px;
   border: 1px solid #edecef;
   border-radius: 30px;
-  transition: transform 1s;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 0.5s ease;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide .brand-slide-img {
   display: block;
   width: 100%;
   height: 100%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(1) .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide .brand-hover-img {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(1) .brand-slide-img {
   background: url("../images/sec02_logo01.png") no-repeat center/55%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(1) .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo01.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(1) .brand-hover-img {
+  background: url("../images/sec02_logo01.png") no-repeat center/contain;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(2) .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(2) .brand-slide-img {
   background: url("../images/sec02_logo02.png") no-repeat center/55%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(2) .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo02.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(2) .brand-hover-img {
+  background: url("../images/sec02_logo02.png") no-repeat center/contain;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(3) .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(3) .brand-slide-img {
   background: url("../images/sec02_logo03.png") no-repeat center/55%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(3) .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo03.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(3) .brand-hover-img {
+  background: url("../images/sec02_logo03.png") no-repeat center/contain;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(4) .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(4) .brand-slide-img {
   background: url("../images/sec02_logo04.png") no-repeat center/55%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(4) .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo04.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(4) .brand-hover-img {
+  background: url("../images/sec02_logo04.png") no-repeat center/contain;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(5) .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(5) .brand-slide-img {
   background: url("../images/sec02_logo05.png") no-repeat center/55%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(5) .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo05.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(5) .brand-hover-img {
+  background: url("../images/sec02_logo05.png") no-repeat center/contain;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(6) .brand-slide-img {
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(6) .brand-slide-img {
   background: url("../images/sec02_logo06.png") no-repeat center/55%;
 }
-.brand .brand-inner .brand-cate .brand-slide li:nth-child(6) .brand-hover-img {
-  display: block;
-  width: 240px;
-  height: 40px;
-  background: url("../images/sec02_logo06.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(6) .brand-hover-img {
+  background: url("../images/sec02_logo06.png") no-repeat center/contain;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box {
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(7) .brand-slide-img {
+  background: url("../images/sec02_logo07.png") no-repeat center/55%;
+}
+.brand .brand-inner .brand-slide .swiper-slide:nth-child(7) .brand-hover-img {
+  background: url("../images/sec02_logo07.png") no-repeat center/contain;
+}
+.brand .brand-inner .brand-slide .swiper-slide .brand-hover-box {
   position: absolute;
   left: 50%;
   bottom: -170%;
@@ -821,12 +797,12 @@ body.active {
   border-radius: 30px;
   visibility: hidden;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 {
+.brand .brand-inner .brand-slide .swiper-slide .brand-hover-box .brand-hover-box1 {
   display: block;
   transform: translateY(30%);
   transition: transform 700ms;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-txt::before {
+.brand .brand-inner .brand-slide .swiper-slide .brand-hover-box .brand-hover-box1 .brand-hover-txt::before {
   content: "";
   display: block;
   width: 20px;
@@ -834,14 +810,14 @@ body.active {
   background: rgba(0, 0, 0, 0.2);
   margin: 18px auto;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-box1 .brand-hover-txt {
+.brand .brand-inner .brand-slide .swiper-slide .brand-hover-box .brand-hover-box1 .brand-hover-txt {
   display: block;
   height: 105px;
   line-height: 1.38;
   letter-spacing: -0.09em;
   text-align: center;
 }
-.brand .brand-inner .brand-cate .brand-slide li .brand-hover-box .brand-hover-button {
+.brand .brand-inner .brand-slide .swiper-slide .brand-hover-box .brand-hover-button {
   position: absolute;
   left: 50%;
   bottom: 10px;
@@ -856,13 +832,11 @@ body.active {
   border-radius: 30px;
   cursor: pointer;
 }
-.brand .brand-inner .brand-cate .brand-slide-next {
-  position: relative;
-  display: block;
-  background: transparent;
-  border: 0;
+.brand .brand-inner .brand-slide .swiper-slide.show {
+  opacity: 1;
+  transform: none;
 }
-.brand .brand-inner .brand-cate .brand-slide-next span {
+.brand .brand-inner .brand-slide-next {
   position: absolute;
   right: 0;
   top: 50%;
@@ -870,45 +844,49 @@ body.active {
   width: 8px;
   height: 15px;
   background: url("../images/next_arrow.png") no-repeat;
-  font-size: 0;
+  border: 0;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1455px) {
-  .brand .brand-inner .brand-cate .brand-slide li:hover {
+@media screen and (max-width: 1500px) {
+  .brand-hover-button {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .brand .brand-inner .brand-cate .brand-slide .swiper-slide:hover {
     border: none;
     box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
     transform: translateY(-10px);
   }
-  .brand .brand-inner .brand-cate .brand-slide li:hover .brand-slide-img {
+  .brand .brand-inner .brand-cate .brand-slide .swiper-slide:hover .brand-slide-img {
     display: none;
   }
-  .brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box {
+  .brand .brand-inner .brand-cate .brand-slide .swiper-slide:hover .brand-hover-box {
     left: 50%;
     top: 50%;
     transform: translate(-50% -50%);
     visibility: visible;
   }
-  .brand .brand-inner .brand-cate .brand-slide li:hover .brand-hover-box .brand-hover-box1 {
+  .brand .brand-inner .brand-cate .brand-slide .swiper-slide:hover .brand-hover-box .brand-hover-box1 {
     transform: translateY(0);
   }
 }
 @media screen and (min-width: 769px) {
-  .brand-slide li:hover {
+  .brand-slide .swiper-slide:hover {
     transform: translateY(-10px);
   }
 }
 @media screen and (max-width: 768px) {
+  .brand-cate {
+    height: 410px !important;
+  }
   .brand-slide-prev,
 .brand-slide-next {
     display: none !important;
   }
-  .brand-slide {
-    flex-wrap: wrap;
-  }
-  .brand-slide li {
-    height: 200px !important;
-    flex-basis: 30%;
+  .brand-slide .swiper-slide {
+    height: 175px !important;
     cursor: pointer;
   }
 }

@@ -84,6 +84,17 @@
       src="https://kit.fontawesome.com/e7ed03fbb3.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="js/brand.js" defer></script>
+    <script src="js/faq.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -385,12 +396,10 @@
       <section class="brand">
         <div class="brand-inner">
           <h2 class="brand-title">brand shop</h2>
-          <div class="brand-cate">
-            <button class="brand-slide-prev">
-              <span>이전</span>
-            </button>
-            <ul class="brand-slide">
-              <li>
+          <div class="swiper brand-cate">
+            <button class="brand-slide-prev"></button>
+            <div class="swiper-wrapper brand-slide">
+              <div class="swiper-slide">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -402,8 +411,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide" data-sa-delay="100">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -414,8 +423,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide" data-sa-delay="200">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -427,8 +436,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide" data-sa-delay="300">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -440,8 +449,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide" data-sa-delay="400">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -453,8 +462,8 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div class="swiper-slide" data-sa-delay="500">
                 <a href="#" class="brand-slide-img"></a>
                 <div class="brand-hover-box">
                   <div class="brand-hover-box1">
@@ -466,11 +475,22 @@
                   </div>
                   <button class="brand-hover-button">구입하기</button>
                 </div>
-              </li>
-            </ul>
-            <button class="brand-slide-next">
-              <span>다음</span>
-            </button>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="brand-slide-img"></a>
+                <div class="brand-hover-box">
+                  <div class="brand-hover-box1">
+                    <span class="brand-hover-img"></span>
+                    <span class="brand-hover-txt">
+                      맛과 건강의 완벽한 조화, <br />
+                      비바시티
+                    </span>
+                  </div>
+                  <button class="brand-hover-button">구입하기</button>
+                </div>
+              </div>
+            </div>
+            <button class="brand-slide-next"></button>
           </div>
         </div>
       </section>
